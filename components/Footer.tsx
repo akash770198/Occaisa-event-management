@@ -39,9 +39,9 @@ export default function Footer() {
               <Image 
                 src="/Occasia_logo.svg" 
                 alt="Occasia Logo" 
-                width={200} 
-                height={60} 
-                className="h-12 w-auto brightness-0 invert"
+                width={280} 
+                height={80} 
+                className="h-16 md:h-20 w-auto brightness-0 invert"
               />
             </Link>
             
