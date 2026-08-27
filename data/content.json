@@ -1,0 +1,383 @@
+{
+  "header": {
+    "topbar": {
+      "welcomeText": "WELCOME TO OCCASIA",
+      "phone": "+1 1234567890",
+      "email": "hello@occasia.com"
+    },
+    "nav": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Services", "href": "#", "hasDropdown": true },
+      { "label": "Events", "href": "#", "hasDropdown": true },
+      { "label": "Gallery", "href": "#" },
+      { "label": "Faq's", "href": "#" },
+      { "label": "Blog", "href": "#" },
+      { "label": "Career", "href": "#" },
+      { "label": "Contact", "href": "#" }
+    ],
+    "consultantBox": {
+      "title": "Talk To Consultant",
+      "phone": "+1 123 456 7890"
+    }
+  },
+  "hero": {
+    "badge": "EVENTS & EXPERIENCES",
+    "titleStart": "Extraordinary Events",
+    "titleHighlight": "Flawlessly",
+    "titleEnd": " Executed",
+    "description": "From corporate gatherings to grand celebrations, we create unforgettable experiences crafted with creativity, precision and passion.",
+    "button1Text": "Get Appointment →",
+    "button2Text": "Play Intro Video"
+  },
+  "about": {
+    "yearsExperience": "12+",
+    "experienceText": "YEARS\nExperience",
+    "badge": "ABOUT US",
+    "titleStart": "Crafting Unforgettable Events With Precision & ",
+    "titleHighlight": "Passion!",
+    "paragraph1": "As an event management company, we are dedicated to executing your vision flawlessly. From corporate gatherings to grand celebrations, we handle every detail with creativity and care.",
+    "paragraph2": "With years of experience in managing diverse events, we ensure a seamless experience for you and your guests. Allow us to take the stress out of event planning so you can enjoy every moment.",
+    "buttonText": "Discover More >"
+  },
+  "aboutPage": {
+    "banner": {
+      "title": "About Us",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "About Us", "href": "/about" }
+      ]
+    },
+    "missionVision": {
+      "badge": "OUR MISSION & VISION",
+      "titleStart": "Building Extraordinary ",
+      "titleHighlight": "Event Experiences!",
+      "description": "We are committed to creating seamless, stunning and unforgettable celebrations that exceed every expectation.",
+      "image": "/Mission_Vision.svg",
+      "mission": {
+        "title": "Our Mission",
+        "text": "To craft extraordinary events by blending creativity, precision and passion — turning every vision into a celebration that feels effortless and unforgettable."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "To be the most trusted event management partner, setting new benchmarks in creativity, service and experiences that guests remember for a lifetime."
+      }
+    },
+    "whyChooseUs": {
+      "badge": "WHY CHOOSE US",
+      "titleStart": "Creating Moments, ",
+      "titleHighlight": "Delivering Memories!",
+      "description": "We blend creativity, passion and precision to design events that leave a lasting impression on you and your guests.",
+      "image": "/Why_chooseUs.svg",
+      "features": [
+        {
+          "title": "Expert Event Planning",
+          "description": "From concept to coordination, our experienced team handles every detail with professionalism and care."
+        },
+        {
+          "title": "Creative & Unique Concepts",
+          "description": "Original themes and experiences tailored to your personality, brand and celebration style."
+        },
+        {
+          "title": "Flawless Execution",
+          "description": "Meticulous planning and on-ground coordination so your event runs seamlessly from start to finish."
+        },
+        {
+          "title": "Client Satisfaction",
+          "description": "Your happiness is our priority. We go the extra mile to exceed expectations every time."
+        }
+      ]
+    }
+  },
+  "services": {
+    "badge": "OUR SERVICES",
+    "title": "Providing quality services",
+    "items": [
+      {
+        "title": "Event Planning",
+        "description": "End-to-end planning and coordination\nfor corporate and private events.",
+        "image": "/Services/main_event_banner.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Wedding Management",
+        "description": "Beautifully planned weddings that\nturn your dream into reality.",
+        "image": "/Services/01_floral_wedding_stage.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Production & Stage Setup",
+        "description": "Professional production with lighting,\nsound, LED screens and staging.",
+        "image": "/Services/02_concert_event_stage.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Exhibitions & Trade Shows",
+        "description": "Innovative setups that showcase your brand\nand connect with the right audience.",
+        "image": "/Services/03_exhibition_trade_booth.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Conferences & Seminars",
+        "description": "Well-organized events that educate,\ninspire and drive meaningful conversations.",
+        "image": "/Services/04_conference_keynote.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      },
+      {
+        "title": "Private Parties",
+        "description": "Personalized celebrations designed\naround your style and happiness.",
+        "image": "/Services/05_birthday_celebration.svg",
+        "linkText": "Read More",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "icon": "mountain",
+      "value": "20 %",
+      "label": "Years of experience"
+    },
+    {
+      "icon": "users",
+      "value": "1,346",
+      "label": "Satisfied customers"
+    },
+    {
+      "icon": "file-check",
+      "value": "99",
+      "label": "Complete projects"
+    },
+    {
+      "icon": "trophy",
+      "value": "13",
+      "label": "Award winning"
+    }
+  ],
+  "testimonials": {
+    "badge": "TESTIMONIALS",
+    "titleStart": "Stories From Our Happy ",
+    "titleHighlight": "Clients & Celebrations!",
+    "items": [
+      {
+        "name": "Amit Verma",
+        "role": "Marketing Manager\nDreamCraft Pvt. Ltd.",
+        "text": "“Occasia turned our annual gala into an unforgettable experience! From creative concepts to flawless execution, every detail was handled with utmost professionalism. Our guests are still talking about the event. Thank you, Occasia, for making it truly special!”",
+        "image": "/Testimonials/01_portrait_vertical.svg"
+      },
+      {
+        "name": "Vikram Singh",
+        "role": "HR Director\nTechSolutions",
+        "text": "“The corporate retreat organized by Occasia was spectacular. The team-building activities were engaging and the logistics were seamless. We have never seen our team so motivated and connected. Highly recommend their services!”",
+        "image": "/Testimonials/02_portrait_vertical.svg"
+      },
+      {
+        "name": "Rohan Desai",
+        "role": "CEO\nInnovateX",
+        "text": "“Our product launch event was a massive success thanks to Occasia. Their innovative stage setup and production quality were unmatched. They brought our vision to life in a way that exceeded all our expectations.”",
+        "image": "/Testimonials/03_portrait_vertical.svg"
+      },
+      {
+        "name": "Neha Kapoor",
+        "role": "Bride",
+        "text": "“They made my dream wedding a reality! Every floral arrangement and lighting detail was perfect. I didn't have to stress about a single thing. It was the most magical day of my life, all thanks to this incredible team.”",
+        "image": "/Testimonials/04_portrait_vertical.svg"
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "Event Coordinator\nGlobal Summit",
+        "text": "“Professional, dedicated, and highly organized. Occasia managed our 500-person conference with incredible efficiency. The audiovisual setup and crowd management were flawless from start to finish.”",
+        "image": "/Testimonials/05_portrait_vertical.svg"
+      },
+      {
+        "name": "Ananya Patel",
+        "role": "Founder\nCreative Arts",
+        "text": "“The exhibition setup they provided was visually stunning and drew a huge crowd. They understood our brand aesthetics perfectly. Truly the best event partners we've ever worked with!”",
+        "image": "/Testimonials/06_portrait_vertical.svg"
+      }
+    ]
+  },
+  "team": {
+    "badge": "OUR TEAM",
+    "titleStart": "The Creative Minds Behind\nEvery ",
+    "titleHighlight": "Amazing Event!",
+    "description": "Passionate professionals dedicated to making your celebrations\nseamless, stunning and truly memorable.",
+    "items": [
+      {
+        "name": "Rohit Sharma",
+        "role": "Founder & CEO",
+        "image": "/Team/01_man_wider_shorter.svg",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "name": "Ankit Verma",
+        "role": "Event Planner",
+        "image": "/Team/02_man_wider_shorter.svg",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "name": "Vivek Mehta",
+        "role": "Creative Director",
+        "image": "/Team/03_man_wider_shorter.svg",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "name": "Sahil Gupta",
+        "role": "Operations Manager",
+        "image": "/Team/04_man_wider_shorter.svg",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      }
+    ]
+  },
+  "blog": {
+    "badge": "OUR BLOG",
+    "titleStart": "Latest Insights & Event ",
+    "titleHighlight": "Stories",
+    "description": "Tips, trends and inspiration to make your events extraordinary.",
+    "featured": {
+      "image": "/Blog.svg",
+      "category": "PLANNING",
+      "date": "18 May 2024",
+      "readTime": "6 Min Read",
+      "title": "10 Stunning Wedding Decor Ideas That Wow Your Guests",
+      "link": "#"
+    },
+    "recent": [
+      {
+        "day": "24",
+        "month": "May",
+        "category": "CORPORATE",
+        "title": "How To Plan A Successful Corporate Event",
+        "link": "#"
+      },
+      {
+        "day": "07",
+        "month": "Jun",
+        "category": "TRENDS",
+        "title": "Top Event Trends to Watch in 2024",
+        "link": "#"
+      },
+      {
+        "day": "29",
+        "month": "Jun",
+        "category": "INSPIRATION",
+        "title": "Creative Birthday Party Ideas for Every Age",
+        "link": "#"
+      }
+    ],
+    "viewAllText": "View All Blogs",
+    "viewAllLink": "#"
+  },
+  "footer": {
+    "about": {
+      "titleStart": "Creating ",
+      "titleHighlight": "Extraordinary\nEvents.",
+      "description": "We craft unforgettable events that bring people together and turn moments into lifelong memories."
+    },
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "youtube": "#"
+    },
+    "columns": [
+      {
+        "title": "COMPANY",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "About Us", "href": "/about" },
+          { "label": "Mission", "href": "/about#mission-vision" },
+          { "label": "Vision", "href": "/about#mission-vision" },
+          { "label": "Our Story", "href": "#" },
+          { "label": "Awards & Achievements", "href": "#" },
+          { "label": "Our Team", "href": "#" },
+          { "label": "Team Detail", "href": "#" }
+        ]
+      },
+      {
+        "title": "SERVICES",
+        "links": [
+          { "label": "Services", "href": "#" },
+          { "label": "Service Detail", "href": "#" },
+          { "label": "Events", "href": "#" },
+          { "label": "Event Detail", "href": "#" },
+          { "label": "Why Choose Us", "href": "/about#why-choose-us" }
+        ]
+      },
+      {
+        "title": "RESOURCES",
+        "links": [
+          { "label": "Blog / News", "href": "#" },
+          { "label": "Blog Detail", "href": "#" },
+          { "label": "Testimonials", "href": "#" },
+          { "label": "Our Partners / Sponsors", "href": "#" },
+          { "label": "FAQ", "href": "#" }
+        ]
+      },
+      {
+        "title": "MORE",
+        "links": [
+          { "label": "Contact Us", "href": "#" },
+          { "label": "Gallery", "href": "#" },
+          { "label": "Careers", "href": "#" },
+          { "label": "Career Detail", "href": "#" },
+          { "label": "Privacy Policy", "href": "#" },
+          { "label": "Cookie Policy", "href": "#" },
+          { "label": "Refund / Cancellation Policy", "href": "#" },
+          { "label": "Disclaimer", "href": "#" }
+        ]
+      }
+    ],
+    "contact": {
+      "location": {
+        "title": "Our Location",
+        "text": "123 Celebration Avenue,\nMumbai, Maharashtra 400001"
+      },
+      "phone": {
+        "title": "Call Us",
+        "text": "+1 1234567890"
+      },
+      "email": {
+        "title": "Email Us",
+        "text": "hello@occasia.com"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2024 Occasia. All Rights Reserved.",
+      "links": [
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Cookie Policy", "href": "#" },
+        { "label": "Refund / Cancellation Policy", "href": "#" },
+        { "label": "Terms & Conditions", "href": "#" },
+        { "label": "Disclaimer", "href": "#" }
+      ]
+    }
+  }
+}
