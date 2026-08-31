@@ -11,6 +11,7 @@ export default function Header() {
   const { header } = data;
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
@@ -180,36 +181,48 @@ export default function Header() {
                       href={item.href}
                       onClick={(e) => {
                         if (item.subLinks) {
-                          // Allow expanding but let the Link act if we want, or just don't close the menu for parent
-                          // For mobile, we just close the menu anyway if they click a real link
+                          e.preventDefault();
+                          setOpenMobileDropdown(openMobileDropdown === item.label ? null : item.label);
                         } else {
                           setIsMobileMenuOpen(false);
                         }
                       }}
-                      className={`text-lg font-semibold py-3 px-4 rounded-xl flex items-center justify-between ${isActive(item.href) ? "bg-[#f0f9fa] text-[#00d0e6]" : "text-[#0b132b] hover:bg-gray-50"
+                      className={`text-lg font-semibold py-3 px-4 rounded-xl flex items-center justify-between transition-colors ${isActive(item.href) ? "bg-[#f0f9fa] text-[#00d0e6]" : "text-[#0b132b] hover:bg-gray-50"
                         }`}
                     >
                       {item.label}
                       {item.hasDropdown && (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <motion.svg
+                          animate={{ rotate: openMobileDropdown === item.label ? 180 : 0 }}
+                          transition={{ duration: 0.2 }}
+                          xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        >
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
+                        </motion.svg>
                       )}
                     </Link>
-                    {item.subLinks && (
-                      <div className="flex flex-col pl-6 mt-1 border-l-2 border-gray-100 ml-4 gap-1">
-                        {item.subLinks.map((subLink: any, subIdx: number) => (
-                          <Link
-                            key={subIdx}
-                            href={subLink.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-base font-semibold text-gray-500 hover:text-[#00d0e6] py-2 px-4 rounded-lg hover:bg-gray-50"
-                          >
-                            {subLink.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+                    <AnimatePresence>
+                      {item.subLinks && openMobileDropdown === item.label && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="flex flex-col pl-6 mt-1 border-l-2 border-gray-100 ml-4 gap-1 overflow-hidden"
+                        >
+                          {item.subLinks.map((subLink: any, subIdx: number) => (
+                            <Link
+                              key={subIdx}
+                              href={subLink.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="text-base font-semibold text-gray-500 hover:text-[#00d0e6] py-2 px-4 rounded-lg hover:bg-gray-50"
+                            >
+                              {subLink.label}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 ))}
               </div>
