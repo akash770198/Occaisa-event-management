@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import PageBanner from "@/components/PageBanner";
-import About from "@/components/About";
-import MissionVision from "@/components/MissionVision";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import PageBanner from "@/app/components/PageBanner";
+import About from "@/app/components/About";
+import MissionVision from "@/app/components/MissionVision";
+import WhyChooseUs from "@/app/components/WhyChooseUs";
 import data from "@/data/content.json";
 
 export const metadata: Metadata = {

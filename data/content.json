@@ -3,11 +3,12 @@
     "topbar": {
       "welcomeText": "WELCOME TO OCCASIA",
       "phone": "+1 1234567890",
-      "email": "hello@occasia.com"
+      "email": "hello@occasia.com",
+      "logo": "/Occasia_logo.svg"
     },
     "nav": [
       { "label": "Home", "href": "/" },
-      { "label": "About", "href": "/about" },
+      { "label": "About", "href": "#", "hasDropdown": true, "subLinks": [{ "label": "About Us", "href": "/about" }, { "label": "Mission", "href": "/mission" }, { "label": "Vision", "href": "/vision" }, { "label": "Our Story", "href": "/our-story" }] },
       { "label": "Services", "href": "#", "hasDropdown": true },
       { "label": "Events", "href": "#", "hasDropdown": true },
       { "label": "Gallery", "href": "#" },
@@ -298,7 +299,8 @@
     "about": {
       "titleStart": "Creating ",
       "titleHighlight": "Extraordinary\nEvents.",
-      "description": "We craft unforgettable events that bring people together and turn moments into lifelong memories."
+      "description": "We craft unforgettable events that bring people together and turn moments into lifelong memories.",
+      "logo": "/Occasia_logo_white.svg"
     },
     "social": {
       "facebook": "#",
@@ -377,6 +379,207 @@
         { "label": "Refund / Cancellation Policy", "href": "#" },
         { "label": "Terms & Conditions", "href": "#" },
         { "label": "Disclaimer", "href": "#" }
+      ]
+    }
+  },
+  "missionPage": {
+    "banner": {
+      "title": "Our Mission",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Mission", "href": "/mission" }
+      ]
+    },
+    "purpose": {
+      "badge": "OUR MISSION",
+      "titleStart": "Our Purpose.\nYour Unforgettable ",
+      "titleHighlight": "Moments.",
+      "description": "At Occasia, our mission is to transform your vision into extraordinary celebrations. We focus on creativity, seamless planning, and attention to detail to craft experiences that leave a lasting impact.",
+      "image": "/Mission/Our_mission.svg"
+    },
+    "values": {
+      "badge": "OUR MISSION",
+      "title": "To deliver exceptional event experiences through innovation, passion, and flawless execution.",
+      "items": [
+        {
+          "icon": "create",
+          "title": "Create",
+          "description": "Innovative ideas tailored to your unique needs."
+        },
+        {
+          "icon": "plan",
+          "title": "Plan",
+          "description": "Meticulous planning for a seamless experience."
+        },
+        {
+          "icon": "execute",
+          "title": "Execute",
+          "description": "Flawless execution with attention to every detail."
+        },
+        {
+          "icon": "delight",
+          "title": "Delight",
+          "description": "Delivering moments that truly delight and inspire."
+        }
+      ]
+    },
+    "commitment": {
+      "titleStart": "Our ",
+      "titleHighlight": "Commitment",
+      "description": "We are committed to understanding your vision and turning it into reality. From the first idea to the final moment, we stand by your side to make your event truly exceptional.",
+      "image": "/Mission/Our_commitment.svg",
+      "features": [
+        {
+          "title": "Customer-focused approach",
+          "description": "We prioritize your needs and deliver experiences that exceed expectations."
+        },
+        {
+          "title": "High-quality service",
+          "description": "We maintain the highest standards in every detail to ensure excellence."
+        },
+        {
+          "title": "Timely and reliable delivery",
+          "description": "We value your time and ensure seamless execution, every time."
+        }
+      ]
+    }
+  },
+  "visionPage": {
+    "banner": {
+      "title": "Our Vision",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Vision", "href": "/vision" }
+      ]
+    },
+    "purpose": {
+      "badge": "OUR VISION",
+      "titleStart": "A Future Filled\nwith Meaningful\n",
+      "titleHighlight": "Celebrations.",
+      "description": "At Occasia, our vision is to be the most trusted and innovative event partner, known for creating extraordinary experiences that bring people together and leave a lasting impact.",
+      "image": "/Mission/Our_mission.svg"
+    },
+    "values": {
+      "badge": "OUR VISION",
+      "title": "To redefine the way the world celebrates by delivering innovative, seamless, and unforgettable event experiences.",
+      "items": [
+        {
+          "icon": "inspire",
+          "title": "Inspire",
+          "description": "To inspire joy and connection through meaningful celebrations."
+        },
+        {
+          "icon": "innovate",
+          "title": "Innovate",
+          "description": "To innovate with creativity and technology for extraordinary experiences."
+        },
+        {
+          "icon": "connect",
+          "title": "Connect",
+          "description": "To connect people, cultures, and communities through unforgettable events."
+        },
+        {
+          "icon": "elevate",
+          "title": "Elevate",
+          "description": "To set new standards of excellence in the event industry worldwide."
+        }
+      ]
+    },
+    "commitment": {
+      "titleStart": "Our Commitment",
+      "titleHighlight": "",
+      "description": "Our vision drives our commitment to deliver experiences that exceed expectations today and shape the future of celebrations tomorrow.",
+      "image": "/Mission/Our_commitment.svg",
+      "features": [
+        {
+          "title": "Creating memorable moments",
+          "description": ""
+        },
+        {
+          "title": "Building lasting relationships",
+          "description": ""
+        },
+        {
+          "title": "Shaping the future of events",
+          "description": ""
+        }
+      ]
+    }
+  },
+  "storyPage": {
+    "banner": {
+      "title": "Our Story",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Story", "href": "/our-story" }
+      ]
+    },
+    "purpose": {
+      "badge": "OUR STORY",
+      "titleStart": "Passion\nThat Creates\nUnforgettable\n",
+      "titleHighlight": "Moments.",
+      "description": "From a simple idea to a trusted event partner — our journey has been about turning dreams into extraordinary celebrations.",
+      "image": "/Mission_Vision.svg"
+    },
+    "journey": {
+      "badge": "OUR JOURNEY",
+      "title": "The Occasia Story",
+      "subtitle": "A story of creativity, dedication and a deep love for creating beautiful celebrations.",
+      "milestones": [
+        {
+          "year": "2015",
+          "title": "The Beginning",
+          "description": "Started with a vision to make every event extraordinary.",
+          "icon": "lightbulb"
+        },
+        {
+          "year": "2017",
+          "title": "Growing Together",
+          "description": "Built a passionate team and happy clients.",
+          "icon": "users"
+        },
+        {
+          "year": "2019",
+          "title": "Raising the Bar",
+          "description": "Delivered 100+ memorable events.",
+          "icon": "trophy"
+        },
+        {
+          "year": "Today",
+          "title": "Creating Magic",
+          "description": "A trusted name in exceptional event experiences.",
+          "icon": "heart"
+        }
+      ]
+    },
+    "values": {
+      "items": [
+        { "label": "Our Values", "icon": "diamond" },
+        { "label": "Creativity", "icon": "leaf" },
+        { "label": "Commitment", "icon": "heart" },
+        { "label": "Trust", "icon": "handshake" },
+        { "label": "Excellence", "icon": "users" }
+      ]
+    },
+    "philosophy": {
+      "badge": "OUR PHILOSOPHY",
+      "titleStart": "More Than Events,\nWe Create Experiences.",
+      "titleHighlight": "",
+      "description": "We believe every celebration is a story worth cherishing. Our mission is to bring your vision to life with creativity, precision and heartfelt attention to detail.",
+      "image": "/Philosophy.svg",
+      "features": [
+        {
+          "title": "Personalized planning for every occasion"
+        },
+        {
+          "title": "Seamless execution with expert coordination"
+        },
+        {
+          "title": "Moments that leave a lasting impression"
+        }
       ]
     }
   }

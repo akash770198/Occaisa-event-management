@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import data from "../data/content.json";
+import data from "../../data/content.json";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
 
@@ -32,7 +32,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-6 md:px-12 lg:px-18">
 
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="flex flex-col items-center text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Content */}
-        <motion.div 
+        <motion.div
           className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ export default function Testimonials() {
           {/* Right Text Area */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             {/* Wrapper with min-height to prevent buttons from jumping */}
-            <div className="min-h-[400px] md:min-h-[320px] relative w-full flex flex-col justify-start">
+            <div className="min-h-[400px] md:min-h-[320px] relative w-full flex flex-col justify-start max-md:min-h-[260px]">
               <AnimatePresence>
                 <motion.div
                   key={currentIndex}

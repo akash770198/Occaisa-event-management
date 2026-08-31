@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import data from "../data/content.json";
+import data from "../../data/content.json";
 import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {

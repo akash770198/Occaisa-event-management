@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import data from "../data/content.json";
+import data from "../../data/content.json";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="relative w-full h-[550px] md:h-[650px] lg:h-[700px] flex items-center justify-start overflow-hidden">
       {/* Background Image */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 -z-10"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
@@ -28,8 +28,8 @@ export default function Hero() {
       {/* Constrained Container */}
       <div className="container mx-auto px-6 md:px-12 lg:px-18 relative h-full flex items-center">
         {/* Navigation Controls */}
-        <motion.div 
-          className="absolute left-6 md:left-12 lg:left-18 top-1/2 -translate-y-1/2 bg-white w-12 h-12 rounded-full flex items-center justify-center cursor-pointer shadow-lg z-20"
+        <motion.div
+          className="absolute left-6 md:left-12 lg:left-18 top-1/2 -translate-y-1/2 bg-white w-12 h-12 rounded-full flex items-center justify-center cursor-pointer shadow-lg z-20 max-md:hidden"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -38,7 +38,7 @@ export default function Hero() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </motion.div>
-        <motion.div 
+        <motion.div
           className="absolute right-6 md:right-12 lg:right-18 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6 z-20"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -59,8 +59,8 @@ export default function Hero() {
         </motion.div>
 
         {/* Content Box */}
-        <motion.div 
-          className="bg-white p-10 md:p-14 lg:p-16 max-w-[650px] shadow-2xl relative w-full flex flex-col justify-center min-h-[500px] -mt-2 md:-mt-6 lg:-mt-8 ml-10 md:ml-16 lg:ml-20"
+        <motion.div
+          className="bg-white p-10 md:p-14 lg:p-16 max-w-[650px] shadow-2xl relative w-full flex flex-col justify-center min-h-[500px] -mt-2 md:-mt-6 lg:-mt-8 ml-10 md:ml-16 lg:ml-20 max-md:ml-0 max-md:px-6 max-md:mt-4 max-md:max-w-full max-md:min-h-0 max-md:pt-6 max-md:pb-5"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl lg:text-5xl font-semibold text-[#1c3e98] leading-[1.2] mb-3 tracking-tight">
+          <h1 className="text-4xl lg:text-5xl font-semibold text-[#1c3e98] leading-[1.2] mb-3 tracking-tight max-md:text-3xl">
             {hero.titleStart} <br />
             <span className="bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] bg-clip-text text-transparent">
               {hero.titleHighlight}
@@ -91,18 +91,18 @@ export default function Hero() {
           <div className="h-1 w-24 bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] rounded-full mb-8"></div>
 
           {/* Description */}
-          <p className="text-gray-500 mb-10 text-base md:text-lg leading-relaxed font-medium">
+          <p className="text-gray-500 mb-10 text-base md:text-lg leading-relaxed font-medium max-md:mb-6">
             {hero.description}
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap items-center gap-8">
-            <button className="bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] hover:opacity-90 text-white font-semibold py-4 px-8 rounded-sm transition-opacity duration-300 shadow-md">
+          <div className="flex flex-wrap items-center gap-8 max-sm:flex-col max-sm:items-start max-sm:gap-4">
+            <button className="bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] hover:opacity-90 text-white font-semibold py-4 px-8 rounded-sm transition-opacity duration-300 shadow-md max-sm:w-full max-sm:px-4">
               {hero.button1Text}
             </button>
             <button className="flex items-center gap-3 group">
               <div className="w-12 h-12 rounded-full border border-[#00d0e6] flex items-center justify-center transition-transform group-hover:scale-105">
-                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#7b2cbf] ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#7b2cbf] ml-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
                 </svg>
               </div>

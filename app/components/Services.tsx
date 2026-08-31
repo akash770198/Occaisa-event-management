@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import data from "../data/content.json";
+import data from "../../data/content.json";
 import { motion } from "framer-motion";
 
 export default function Services() {
@@ -11,10 +11,10 @@ export default function Services() {
     <section className="relative w-full bg-white pb-24">
       {/* Dark background top half */}
       <div className="absolute top-0 left-0 right-0 h-[450px] z-0">
-        <Image 
-          src="/Services/main_event_banner.svg" 
-          alt="Services Background" 
-          fill 
+        <Image
+          src="/Services/main_event_banner.svg"
+          alt="Services Background"
+          fill
           className="object-cover"
         />
         {/* Overlays for the dark effect */}
@@ -24,7 +24,7 @@ export default function Services() {
 
       <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-18 pt-24">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           className="flex flex-col items-center text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Services() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.items.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-[0_10px_40px_rgb(0,0,0,0.12)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.2)] transition-shadow duration-300 flex flex-col"
               initial={{ opacity: 0, y: 40 }}
@@ -52,11 +52,11 @@ export default function Services() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
             >
-              <div className="relative h-56 sm:h-64 w-full border-2 border-white bg-white rounded-t-xl overflow-hidden">
-                <Image 
-                  src={item.image} 
-                  alt={item.title} 
-                  fill 
+              <div className="relative h-56 sm:h-64 w-full border-2 border-white bg-white rounded-t-xl overflow-hidden max-md:h-48">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
                   className="object-cover"
                 />
               </div>
@@ -71,8 +71,8 @@ export default function Services() {
                 <p className="text-gray-500 font-medium text-sm md:text-base leading-relaxed mb-6 flex-1 whitespace-pre-line">
                   {item.description}
                 </p>
-                <a 
-                  href={item.linkUrl} 
+                <a
+                  href={item.linkUrl}
                   className="text-[#7b2cbf] font-bold text-sm flex items-center gap-2 hover:text-[#1c3e98] transition-colors mt-auto w-max"
                 >
                   {item.linkText} <span className="text-lg leading-none">→</span>
