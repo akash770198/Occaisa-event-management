@@ -118,7 +118,7 @@ export default function Header() {
         </div>
 
         {/* Overlapping Cyan Consultant Box - Aligned to right padding */}
-        <div className="hidden lg:flex absolute top-8 right-6 md:right-12 lg:right-18 h-[100px] xl:h-[110px] w-[260px] xl:w-[300px] z-20 overflow-hidden">
+        <div className="hidden lg:flex absolute top-8 right-6 md:right-12 lg:right-18 h-[100px] xl:h-[110px] w-[230px] xl:w-[260px] z-20 overflow-hidden">
           <motion.div
             initial={{ y: -150 }}
             animate={{ y: 0 }}

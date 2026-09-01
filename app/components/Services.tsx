@@ -3,6 +3,7 @@
 import Image from "next/image";
 import data from "../../data/content.json";
 import { motion } from "framer-motion";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   const { services } = data;
@@ -43,42 +44,8 @@ export default function Services() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {services.items.map((item, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-[0_10px_40px_rgb(0,0,0,0.12)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.2)] transition-shadow duration-300 flex flex-col"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-            >
-              <div className="relative h-56 sm:h-64 w-full border-2 border-white bg-white rounded-t-xl overflow-hidden max-md:h-48">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6 md:p-8 flex-1 flex flex-col">
-                <div className="relative mb-3 flex items-start">
-                  {/* Purple L-bracket */}
-                  <div className="absolute -left-1 top-0 w-2.5 h-2.5 border-t-2 border-l-2 border-[#7b2cbf] mt-2"></div>
-                  <h3 className="text-xl font-bold text-[#1c3e98] pl-3.5 leading-tight">
-                    {item.title}
-                  </h3>
-                </div>
-                <p className="text-gray-500 font-medium text-sm md:text-base leading-relaxed mb-6 flex-1 whitespace-pre-line">
-                  {item.description}
-                </p>
-                <a
-                  href={item.linkUrl}
-                  className="text-[#7b2cbf] font-bold text-sm flex items-center gap-2 hover:text-[#1c3e98] transition-colors mt-auto w-max"
-                >
-                  {item.linkText} <span className="text-lg leading-none">→</span>
-                </a>
-              </div>
-            </motion.div>
+          {services.items.map((item: any, index: number) => (
+            <ServiceCard key={index} item={item} index={index} />
           ))}
         </div>
       </div>

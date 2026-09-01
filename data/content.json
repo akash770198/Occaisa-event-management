@@ -7,15 +7,77 @@
       "logo": "/Occasia_logo.svg"
     },
     "nav": [
-      { "label": "Home", "href": "/" },
-      { "label": "About", "href": "#", "hasDropdown": true, "subLinks": [{ "label": "About Us", "href": "/about" }, { "label": "Mission", "href": "/mission" }, { "label": "Vision", "href": "/vision" }, { "label": "Our Story", "href": "/our-story" }] },
-      { "label": "Services", "href": "#", "hasDropdown": true },
-      { "label": "Events", "href": "#", "hasDropdown": true },
-      { "label": "Gallery", "href": "#" },
-      { "label": "Faq's", "href": "#" },
-      { "label": "Blog", "href": "#" },
-      { "label": "Career", "href": "#" },
-      { "label": "Contact", "href": "#" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "#",
+        "hasDropdown": true,
+        "subLinks": [
+          {
+            "label": "About Us",
+            "href": "/about-us"
+          },
+          {
+            "label": "Why Choose Us",
+            "href": "/why-choose-us"
+          },
+          {
+            "label": "Mission",
+            "href": "/mission"
+          },
+          {
+            "label": "Vision",
+            "href": "/vision"
+          },
+          {
+            "label": "Our Story",
+            "href": "/our-story"
+          },
+          {
+            "label": "Our Team",
+            "href": "/our-team"
+          },
+          {
+            "label": "Awards",
+            "href": "/awards"
+          }
+        ],
+        "subitems": [
+          {
+            "label": "Blog",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "href": "/services",
+        "hasDropdown": false
+      },
+      {
+        "label": "Events",
+        "href": "#",
+        "hasDropdown": true
+      },
+      {
+        "label": "Gallery",
+        "href": "#"
+      },
+      {
+        "label": "Faq's",
+        "href": "#"
+      },
+      {
+        "label": "Career",
+        "href": "#"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
     "consultantBox": {
       "title": "Talk To Consultant",
@@ -46,8 +108,14 @@
       "title": "About Us",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "About Us", "href": "/about" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About Us",
+          "href": "/about"
+        }
       ]
     },
     "missionVision": {
@@ -100,42 +168,582 @@
         "description": "End-to-end planning and coordination\nfor corporate and private events.",
         "image": "/Services/main_event_banner.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/event-planning",
+        "slug": "event-planning",
+        "link": "/services/event-planning",
+        "details": {
+          "badge": "EVENT PLANNING",
+          "mainTitle": "Seamless planning. Memorable experiences.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       },
       {
         "title": "Wedding Management",
         "description": "Beautifully planned weddings that\nturn your dream into reality.",
         "image": "/Services/01_floral_wedding_stage.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/wedding-management",
+        "slug": "wedding-management",
+        "link": "/services/wedding-management",
+        "details": {
+          "badge": "WEDDING MANAGEMENT",
+          "mainTitle": "Expert Wedding Management services for you.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       },
       {
         "title": "Production & Stage Setup",
         "description": "Professional production with lighting,\nsound, LED screens and staging.",
         "image": "/Services/02_concert_event_stage.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/production-stage-setup",
+        "slug": "production-stage-setup",
+        "link": "/services/production-stage-setup",
+        "details": {
+          "badge": "PRODUCTION & STAGE SETUP",
+          "mainTitle": "Expert Production & Stage Setup services for you.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       },
       {
         "title": "Exhibitions & Trade Shows",
         "description": "Innovative setups that showcase your brand\nand connect with the right audience.",
         "image": "/Services/03_exhibition_trade_booth.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/exhibitions-trade-shows",
+        "slug": "exhibitions-trade-shows",
+        "link": "/services/exhibitions-trade-shows",
+        "details": {
+          "badge": "EXHIBITIONS & TRADE SHOWS",
+          "mainTitle": "Expert Exhibitions & Trade Shows services for you.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       },
       {
         "title": "Conferences & Seminars",
         "description": "Well-organized events that educate,\ninspire and drive meaningful conversations.",
         "image": "/Services/04_conference_keynote.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/conferences-seminars",
+        "slug": "conferences-seminars",
+        "link": "/services/conferences-seminars",
+        "details": {
+          "badge": "CONFERENCES & SEMINARS",
+          "mainTitle": "Expert Conferences & Seminars services for you.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       },
       {
         "title": "Private Parties",
         "description": "Personalized celebrations designed\naround your style and happiness.",
         "image": "/Services/05_birthday_celebration.svg",
         "linkText": "Read More",
-        "linkUrl": "#"
+        "linkUrl": "/services/private-parties",
+        "slug": "private-parties",
+        "link": "/services/private-parties",
+        "details": {
+          "badge": "PRIVATE PARTIES",
+          "mainTitle": "Expert Private Parties services for you.",
+          "paragraphs": [
+            "From concept to execution, we plan every detail to create flawless events that leave a lasting impression. Whether it's a corporate gathering, wedding, or private celebration - we make it extraordinary.",
+            "At Occasia, we believe every event tells a story. Our expert planners work closely with you to understand your vision, objectives, and preferences to craft events that inspire, engage, and create lasting memories. We handle everything — from the big picture to the smallest details — so you can relax and enjoy your special moments while we bring your vision to life."
+          ],
+          "features": [
+            {
+              "title": "End-to-End Planning",
+              "description": "Complete planning and coordination from the initial concept to the final execution.",
+              "icon": "CalendarCheck"
+            },
+            {
+              "title": "Expert Team",
+              "description": "Experienced professionals dedicated to delivering creative and flawless events.",
+              "icon": "Users"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and ensure punctual execution without compromising quality.",
+              "icon": "Clock"
+            },
+            {
+              "title": "Unforgettable Experiences",
+              "description": "Our goal is to create moments that you and your guests will cherish forever.",
+              "icon": "Star"
+            }
+          ],
+          "whyChooseUs": {
+            "title": "Why Choose Occasia?",
+            "description": "We combine creativity, strategy, and flawless execution to deliver events that stand out. From intimate gatherings to large-scale celebrations, our attention to detail and commitment to excellence set us apart.",
+            "list": [
+              {
+                "title": "Personalized Approach",
+                "description": "We take the time to understand your goals and tailor every detail to match your vision and style."
+              },
+              {
+                "title": "Creative & Innovative",
+                "description": "Our creative ideas and innovative concepts make your event unique, engaging and truly memorable."
+              },
+              {
+                "title": "Vendor Network",
+                "description": "Strong relationships with trusted vendors help us get the best quality and value for your event."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "We handle everything, so you can relax and enjoy your event without any worries or last-minute stress."
+              }
+            ]
+          },
+          "whatWeOffer": {
+            "title": "What We Offer",
+            "description": "We offer a comprehensive range of event planning services to make your event seamless, successful and unforgettable.",
+            "items": [
+              {
+                "title": "Concept & Strategy",
+                "description": "We create creative concepts and strategic plans tailored to your objectives and audience.",
+                "icon": "Lightbulb"
+              },
+              {
+                "title": "Venue Selection",
+                "description": "We help you find the perfect venue that fits your event needs, guest count and budget.",
+                "icon": "MapPin"
+              },
+              {
+                "title": "Vendor Management",
+                "description": "We work with trusted vendors and manage contracts, coordination and execution.",
+                "icon": "Users"
+              },
+              {
+                "title": "Timeline & Coordination",
+                "description": "We build detailed timelines and coordinate every aspect to ensure a smooth and organized event.",
+                "icon": "CalendarCheck"
+              },
+              {
+                "title": "On-Site Management",
+                "description": "Our team manages everything on the big day so you can focus on your guests and enjoy the moment.",
+                "icon": "Mic"
+              },
+              {
+                "title": "Post-Event Support",
+                "description": "We handle post-event tasks, feedback collection and reports to help you evaluate your event's success.",
+                "icon": "Headset"
+              }
+            ]
+          }
+        }
       }
     ]
   },
@@ -313,47 +921,125 @@
       {
         "title": "COMPANY",
         "links": [
-          { "label": "Home", "href": "/" },
-          { "label": "About Us", "href": "/about" },
-          { "label": "Mission", "href": "/about#mission-vision" },
-          { "label": "Vision", "href": "/about#mission-vision" },
-          { "label": "Our Story", "href": "#" },
-          { "label": "Awards & Achievements", "href": "#" },
-          { "label": "Our Team", "href": "#" },
-          { "label": "Team Detail", "href": "#" }
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "label": "Mission",
+            "href": "/about#mission-vision"
+          },
+          {
+            "label": "Vision",
+            "href": "/about#mission-vision"
+          },
+          {
+            "label": "Our Story",
+            "href": "/our-story"
+          },
+          {
+            "label": "Awards & Achievements",
+            "href": "/awards"
+          },
+          {
+            "label": "Our Team",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "#"
+          }
         ]
       },
       {
         "title": "SERVICES",
         "links": [
-          { "label": "Services", "href": "#" },
-          { "label": "Service Detail", "href": "#" },
-          { "label": "Events", "href": "#" },
-          { "label": "Event Detail", "href": "#" },
-          { "label": "Why Choose Us", "href": "/about#why-choose-us" }
+          {
+            "label": "Services",
+            "href": "#"
+          },
+          {
+            "label": "Service Detail",
+            "href": "#"
+          },
+          {
+            "label": "Events",
+            "href": "#"
+          },
+          {
+            "label": "Event Detail",
+            "href": "#"
+          },
+          {
+            "label": "Why Choose Us",
+            "href": "/about#why-choose-us"
+          }
         ]
       },
       {
         "title": "RESOURCES",
         "links": [
-          { "label": "Blog / News", "href": "#" },
-          { "label": "Blog Detail", "href": "#" },
-          { "label": "Testimonials", "href": "#" },
-          { "label": "Our Partners / Sponsors", "href": "#" },
-          { "label": "FAQ", "href": "#" }
+          {
+            "label": "Blog / News",
+            "href": "#"
+          },
+          {
+            "label": "Blog Detail",
+            "href": "#"
+          },
+          {
+            "label": "Testimonials",
+            "href": "#"
+          },
+          {
+            "label": "Our Partners / Sponsors",
+            "href": "#"
+          },
+          {
+            "label": "FAQ",
+            "href": "#"
+          }
         ]
       },
       {
         "title": "MORE",
         "links": [
-          { "label": "Contact Us", "href": "#" },
-          { "label": "Gallery", "href": "#" },
-          { "label": "Careers", "href": "#" },
-          { "label": "Career Detail", "href": "#" },
-          { "label": "Privacy Policy", "href": "#" },
-          { "label": "Cookie Policy", "href": "#" },
-          { "label": "Refund / Cancellation Policy", "href": "#" },
-          { "label": "Disclaimer", "href": "#" }
+          {
+            "label": "Contact Us",
+            "href": "#"
+          },
+          {
+            "label": "Gallery",
+            "href": "#"
+          },
+          {
+            "label": "Careers",
+            "href": "#"
+          },
+          {
+            "label": "Career Detail",
+            "href": "#"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "#"
+          },
+          {
+            "label": "Cookie Policy",
+            "href": "#"
+          },
+          {
+            "label": "Refund / Cancellation Policy",
+            "href": "#"
+          },
+          {
+            "label": "Disclaimer",
+            "href": "#"
+          }
         ]
       }
     ],
@@ -374,11 +1060,26 @@
     "bottom": {
       "copyright": "© 2024 Occasia. All Rights Reserved.",
       "links": [
-        { "label": "Privacy Policy", "href": "#" },
-        { "label": "Cookie Policy", "href": "#" },
-        { "label": "Refund / Cancellation Policy", "href": "#" },
-        { "label": "Terms & Conditions", "href": "#" },
-        { "label": "Disclaimer", "href": "#" }
+        {
+          "label": "Privacy Policy",
+          "href": "#"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "#"
+        },
+        {
+          "label": "Refund / Cancellation Policy",
+          "href": "#"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "#"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "#"
+        }
       ]
     }
   },
@@ -387,8 +1088,14 @@
       "title": "Our Mission",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Mission", "href": "/mission" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Mission",
+          "href": "/mission"
+        }
       ]
     },
     "purpose": {
@@ -450,8 +1157,14 @@
       "title": "Our Vision",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Vision", "href": "/vision" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Vision",
+          "href": "/vision"
+        }
       ]
     },
     "purpose": {
@@ -513,8 +1226,14 @@
       "title": "Our Story",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Story", "href": "/our-story" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Story",
+          "href": "/our-story"
+        }
       ]
     },
     "purpose": {
@@ -557,11 +1276,26 @@
     },
     "values": {
       "items": [
-        { "label": "Our Values", "icon": "diamond" },
-        { "label": "Creativity", "icon": "leaf" },
-        { "label": "Commitment", "icon": "heart" },
-        { "label": "Trust", "icon": "handshake" },
-        { "label": "Excellence", "icon": "users" }
+        {
+          "label": "Our Values",
+          "icon": "diamond"
+        },
+        {
+          "label": "Creativity",
+          "icon": "leaf"
+        },
+        {
+          "label": "Commitment",
+          "icon": "heart"
+        },
+        {
+          "label": "Trust",
+          "icon": "handshake"
+        },
+        {
+          "label": "Excellence",
+          "icon": "users"
+        }
       ]
     },
     "philosophy": {
@@ -581,6 +1315,1608 @@
           "title": "Moments that leave a lasting impression"
         }
       ]
+    }
+  },
+  "awardsPage": {
+    "banner": {
+      "title": "Awards",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Awards",
+          "href": "/awards"
+        }
+      ]
+    },
+    "intro": {
+      "badge": "OUR AWARDS",
+      "titleStart": "Recognized for\nExcellence.\n",
+      "titleHighlight": "Driven by Passion.",
+      "description": "Our dedication to delivering extraordinary celebrations has earned us the trust of our clients and recognition from the industry.",
+      "image": "/Awards/occasia_realistic_trophy.svg"
+    },
+    "achievements": {
+      "badge": "OUR ACHIEVEMENTS",
+      "description": "Milestones that inspire us to keep raising the bar.",
+      "stats": [
+        {
+          "icon": "trophy",
+          "value": "25+",
+          "label": "Awards Won"
+        },
+        {
+          "icon": "medal",
+          "value": "10+",
+          "label": "Years of Excellence"
+        },
+        {
+          "icon": "users",
+          "value": "500+",
+          "label": "Happy Clients"
+        },
+        {
+          "icon": "calendar",
+          "value": "1000+",
+          "label": "Events Executed"
+        }
+      ]
+    },
+    "recognitions": {
+      "badge": "AWARDS & RECOGNITIONS",
+      "items": [
+        {
+          "image": "/Awards/award_1_photorealistic.svg",
+          "title": "Excellence in Event Management",
+          "org": "Event Excellence Awards\n2024"
+        },
+        {
+          "image": "/Awards/award_2_photorealistic.svg",
+          "title": "Best Wedding Planner\nof the Year",
+          "org": "Wedding Sutra Awards\n2023"
+        },
+        {
+          "image": "/Awards/award_3_photorealistic.svg",
+          "title": "Outstanding Client\nSatisfaction",
+          "org": "India Event Awards\n2022"
+        },
+        {
+          "image": "/Awards/award_4_photorealistic.svg",
+          "title": "Most Innovative\nEvent Concept",
+          "org": "Global Event Awards\n2021"
+        }
+      ]
+    }
+  },
+  "teamPage": {
+    "banner": {
+      "title": "Our Teams",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Teams",
+          "href": "/our-team"
+        }
+      ]
+    },
+    "team": {
+      "badge": "OUR TEAM",
+      "titleStart": "The Creative Minds Behind\nEvery ",
+      "titleHighlight": "Amazing Event!",
+      "description": "Passionate professionals dedicated to making your celebrations\nseamless, stunning and truly memorable.",
+      "items": [
+        {
+          "name": "Rohit Sharma",
+          "role": "Founder & CEO",
+          "image": "/Team/01_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "rohit-sharma"
+        },
+        {
+          "name": "Ankit Verma",
+          "role": "Event Planner",
+          "image": "/Team/02_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "ankit-verma"
+        },
+        {
+          "name": "Vivek Mehta",
+          "role": "Creative Director",
+          "image": "/Team/03_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "vivek-mehta"
+        },
+        {
+          "name": "Sahil Gupta",
+          "role": "Operations Manager",
+          "image": "/Team/04_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "sahil-gupta"
+        },
+        {
+          "name": "Neha Singh",
+          "role": "Wedding Specialist",
+          "image": "/Team/05_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "neha-singh"
+        },
+        {
+          "name": "Pooja Bansal",
+          "role": "Design Lead",
+          "image": "/Team/06_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "pooja-bansal"
+        },
+        {
+          "name": "Kritika Joshi",
+          "role": "Client Relationship Manager",
+          "image": "/Team/07_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "kritika-joshi"
+        },
+        {
+          "name": "Riya Mehra",
+          "role": "Marketing Executive",
+          "image": "/Team/08_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          },
+          "slug": "riya-mehra"
+        }
+      ]
+    }
+  },
+  "teamDetailPage": {
+    "banner": {
+      "title": "Our Teams",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Teams",
+          "href": "/our-team"
+        },
+        {
+          "label": "Team Detail",
+          "href": "/team-detail"
+        }
+      ]
+    },
+    "breadcrumb2": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Our Team",
+        "href": "/our-team"
+      },
+      {
+        "label": "Rohit Sharma",
+        "href": "/team-detail"
+      }
+    ],
+    "profile": {
+      "image": "/Team/01_man_wider_shorter.svg",
+      "name": "Rohit Sharma",
+      "role": "Founder & CEO",
+      "badge": "OUR TEAM",
+      "description": "With a vision to turn celebrations into unforgettable experiences, Rohit leads Occasia with passion, creativity and a client-first approach.",
+      "contact": {
+        "phone": "+1 1234567890",
+        "email": "hello@occasia.com",
+        "location": "Mumbai, Maharashtra, India"
+      },
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "instagram": "#",
+        "linkedin": "#"
+      }
+    },
+    "about": {
+      "badge": "ABOUT ROHIT",
+      "paragraphs": [
+        "Rohit Sharma is the driving force behind Occasia Events. His leadership, innovative thinking and commitment to excellence have helped Occasia become a trusted name in the event management industry.",
+        "He believes every event tells a story and his mission is to bring that story to life in the most magical way."
+      ],
+      "quote": "We don't just plan events, we create memories that last a lifetime."
+    },
+    "expertise": {
+      "badge": "EXPERTISE",
+      "skills": [
+        {
+          "name": "Event Strategy & Planning",
+          "percent": 95
+        },
+        {
+          "name": "Client Relationship",
+          "percent": 92
+        },
+        {
+          "name": "Team Leadership",
+          "percent": 90
+        },
+        {
+          "name": "Creative Direction",
+          "percent": 88
+        },
+        {
+          "name": "Business Development",
+          "percent": 85
+        }
+      ]
+    },
+    "relatedTeam": {
+      "badge": "OUR TEAM",
+      "members": [
+        {
+          "name": "Ankit Verma",
+          "role": "Event Planner",
+          "image": "/Team/02_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          }
+        },
+        {
+          "name": "Vivek Mehta",
+          "role": "Creative Director",
+          "image": "/Team/03_man_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          }
+        },
+        {
+          "name": "Neha Singh",
+          "role": "Wedding Specialist",
+          "image": "/Team/05_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          }
+        },
+        {
+          "name": "Riya Mehra",
+          "role": "Marketing Executive",
+          "image": "/Team/08_woman_wider_shorter.svg",
+          "social": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+          }
+        }
+      ],
+      "buttonText": "View All Team Members →",
+      "buttonLink": "/our-team"
+    }
+  },
+  "teamDetails": {
+    "rohit-sharma": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/rohit-sharma"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Rohit Sharma",
+          "href": "/our-team/rohit-sharma"
+        }
+      ],
+      "profile": {
+        "image": "/Team/01_man_wider_shorter.svg",
+        "name": "Rohit Sharma",
+        "role": "Founder & CEO",
+        "badge": "OUR TEAM",
+        "description": "With a vision to turn celebrations into unforgettable experiences, Rohit leads Occasia with passion, creativity and a client-first approach.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT ROHIT",
+        "paragraphs": [
+          "Rohit Sharma is the driving force behind Occasia Events. His leadership, innovative thinking and commitment to excellence have helped Occasia become a trusted name in the event management industry.",
+          "He believes every event tells a story and his mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          },
+          {
+            "name": "Neha Singh",
+            "role": "Wedding Specialist",
+            "image": "/Team/05_woman_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "neha-singh"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "ankit-verma": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/ankit-verma"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Ankit Verma",
+          "href": "/our-team/ankit-verma"
+        }
+      ],
+      "profile": {
+        "image": "/Team/02_man_wider_shorter.svg",
+        "name": "Ankit Verma",
+        "role": "Event Planner",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT ANKIT",
+        "paragraphs": [
+          "Ankit Verma brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          },
+          {
+            "name": "Neha Singh",
+            "role": "Wedding Specialist",
+            "image": "/Team/05_woman_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "neha-singh"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "vivek-mehta": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/vivek-mehta"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Vivek Mehta",
+          "href": "/our-team/vivek-mehta"
+        }
+      ],
+      "profile": {
+        "image": "/Team/03_man_wider_shorter.svg",
+        "name": "Vivek Mehta",
+        "role": "Creative Director",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT VIVEK",
+        "paragraphs": [
+          "Vivek Mehta brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          },
+          {
+            "name": "Neha Singh",
+            "role": "Wedding Specialist",
+            "image": "/Team/05_woman_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "neha-singh"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "sahil-gupta": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/sahil-gupta"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Sahil Gupta",
+          "href": "/our-team/sahil-gupta"
+        }
+      ],
+      "profile": {
+        "image": "/Team/04_man_wider_shorter.svg",
+        "name": "Sahil Gupta",
+        "role": "Operations Manager",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT SAHIL",
+        "paragraphs": [
+          "Sahil Gupta brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Neha Singh",
+            "role": "Wedding Specialist",
+            "image": "/Team/05_woman_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "neha-singh"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "neha-singh": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/neha-singh"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Neha Singh",
+          "href": "/our-team/neha-singh"
+        }
+      ],
+      "profile": {
+        "image": "/Team/05_woman_wider_shorter.svg",
+        "name": "Neha Singh",
+        "role": "Wedding Specialist",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT NEHA",
+        "paragraphs": [
+          "Neha Singh brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "pooja-bansal": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/pooja-bansal"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Pooja Bansal",
+          "href": "/our-team/pooja-bansal"
+        }
+      ],
+      "profile": {
+        "image": "/Team/06_woman_wider_shorter.svg",
+        "name": "Pooja Bansal",
+        "role": "Design Lead",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT POOJA",
+        "paragraphs": [
+          "Pooja Bansal brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "kritika-joshi": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/kritika-joshi"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Kritika Joshi",
+          "href": "/our-team/kritika-joshi"
+        }
+      ],
+      "profile": {
+        "image": "/Team/07_woman_wider_shorter.svg",
+        "name": "Kritika Joshi",
+        "role": "Client Relationship Manager",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT KRITIKA",
+        "paragraphs": [
+          "Kritika Joshi brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    },
+    "riya-mehra": {
+      "banner": {
+        "title": "Our Teams",
+        "image": "/PageBanner.svg",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Teams",
+            "href": "/our-team"
+          },
+          {
+            "label": "Team Detail",
+            "href": "/our-team/riya-mehra"
+          }
+        ]
+      },
+      "breadcrumb2": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team"
+        },
+        {
+          "label": "Riya Mehra",
+          "href": "/our-team/riya-mehra"
+        }
+      ],
+      "profile": {
+        "image": "/Team/08_woman_wider_shorter.svg",
+        "name": "Riya Mehra",
+        "role": "Marketing Executive",
+        "badge": "OUR TEAM",
+        "description": "A dedicated professional with a passion for creating extraordinary event experiences.",
+        "contact": {
+          "phone": "+1 1234567890",
+          "email": "hello@occasia.com",
+          "location": "Mumbai, Maharashtra, India"
+        },
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "instagram": "#",
+          "linkedin": "#"
+        }
+      },
+      "about": {
+        "badge": "ABOUT RIYA",
+        "paragraphs": [
+          "Riya Mehra brings creativity and dedication to the Occasia team. With a keen eye for detail, they ensure every aspect of an event is flawlessly executed.",
+          "They believe every event tells a story and their mission is to bring that story to life in the most magical way."
+        ],
+        "quote": "We don't just plan events, we create memories that last a lifetime."
+      },
+      "expertise": {
+        "badge": "EXPERTISE",
+        "skills": [
+          {
+            "name": "Event Strategy & Planning",
+            "percent": 95
+          },
+          {
+            "name": "Client Relationship",
+            "percent": 92
+          },
+          {
+            "name": "Team Leadership",
+            "percent": 90
+          },
+          {
+            "name": "Creative Direction",
+            "percent": 88
+          },
+          {
+            "name": "Business Development",
+            "percent": 85
+          }
+        ]
+      },
+      "relatedTeam": {
+        "badge": "OUR TEAM",
+        "members": [
+          {
+            "name": "Rohit Sharma",
+            "role": "Founder & CEO",
+            "image": "/Team/01_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "rohit-sharma"
+          },
+          {
+            "name": "Ankit Verma",
+            "role": "Event Planner",
+            "image": "/Team/02_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "ankit-verma"
+          },
+          {
+            "name": "Vivek Mehta",
+            "role": "Creative Director",
+            "image": "/Team/03_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "vivek-mehta"
+          },
+          {
+            "name": "Sahil Gupta",
+            "role": "Operations Manager",
+            "image": "/Team/04_man_wider_shorter.svg",
+            "social": {
+              "facebook": "#",
+              "twitter": "#",
+              "instagram": "#",
+              "linkedin": "#"
+            },
+            "slug": "sahil-gupta"
+          }
+        ],
+        "buttonText": "View All Team Members →",
+        "buttonLink": "/our-team"
+      }
+    }
+  },
+  "servicesPage": {
+    "banner": {
+      "title": "Services",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        }
+      ]
+    },
+    "services": {
+      "badge": "OUR SERVICES",
+      "titleStart": "Providing quality ",
+      "titleHighlight": "services",
+      "items": [
+        {
+          "title": "Event Planning",
+          "description": "End-to-end planning and coordination\nfor corporate and private events.",
+          "image": "/Services/main_event_banner.svg",
+          "link": "/services/event-planning"
+        },
+        {
+          "title": "Wedding Management",
+          "description": "Beautifully planned weddings that\nturn your dream into reality.",
+          "image": "/Services/01_floral_wedding_stage.svg",
+          "link": "#"
+        },
+        {
+          "title": "Production & Stage Setup",
+          "description": "Professional production with lighting,\nsound, LED screens and staging.",
+          "image": "/Services/02_concert_event_stage.svg",
+          "link": "#"
+        },
+        {
+          "title": "Exhibitions & Trade Shows",
+          "description": "Innovative setups that showcase your brand\nand connect with the right audience.",
+          "image": "/Services/03_exhibition_trade_booth.svg",
+          "link": "#"
+        },
+        {
+          "title": "Conferences & Seminars",
+          "description": "Well-organized events that educate,\ninspire and drive meaningful conversations.",
+          "image": "/Services/04_conference_keynote.svg",
+          "link": "#"
+        },
+        {
+          "title": "Private Parties",
+          "description": "Personalized celebrations designed\naround your style and happiness.",
+          "image": "/Services/05_birthday_celebration.svg",
+          "link": "#"
+        }
+      ]
+    },
+    "eventsWePlan": {
+      "title": "Events We Plan",
+      "description": "From corporate conferences and product launches to weddings, exhibitions and private parties — we plan events of all kinds and sizes.",
+      "list": [
+        "Corporate Meetings & Conferences",
+        "Product Launches",
+        "Award Ceremonies",
+        "Weddings & Receptions",
+        "Exhibitions & Trade Shows",
+        "Birthday & Anniversary Celebrations",
+        "Social Gatherings & Private Parties"
+      ]
+    }
+  },
+  "navigation": [],
+  "whyChooseUsPage": {
+    "banner": {
+      "title": "Why Choose Us",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Why Choose Us",
+          "href": "/why-choose-us"
+        }
+      ]
+    }
+  },
+  "contactPage": {
+    "banner": {
+      "title": "Contact Us",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      ]
+    },
+    "heading": {
+      "badge": "GET IN TOUCH",
+      "titleStart": "We'd Love To ",
+      "titleHighlight": "Hear From You!",
+      "description": "Have a question, idea, or ready to start planning your next event?\nWe're here to help and make it unforgettable."
+    },
+    "form": {
+      "title": "Write to us",
+      "submitText": "Send Message",
+      "securityText": "Your information is safe with us. We never share your details."
+    },
+    "details": {
+      "title": "Our Contact Details",
+      "description": "We're here to help you create extraordinary events.",
+      "items": [
+        {
+          "icon": "MapPin",
+          "title": "Address",
+          "value": "123 Celebration Avenue,\nMumbai, Maharashtra 400001"
+        },
+        {
+          "icon": "Phone",
+          "title": "Phone",
+          "value": "+1 1234567890"
+        },
+        {
+          "icon": "Mail",
+          "title": "Email",
+          "value": "hello@occasia.com"
+        },
+        {
+          "icon": "Clock",
+          "title": "Working Hours",
+          "value": "Mon - Sat: 10:00 AM - 7:00 PM\nSunday: Closed"
+        }
+      ],
+      "social": {
+        "title": "Follow Us"
+      }
+    },
+    "map": {
+      "title": "Occasia Events",
+      "address": "123 Celebration Avenue,\nMumbai, Maharashtra 400001",
+      "linkText": "View on Google Maps"
     }
   }
 }
