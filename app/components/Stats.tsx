@@ -5,6 +5,39 @@ import data from "../../data/content.json";
 import { motion } from "framer-motion";
 import { Mountain, UserCheck, FileCheck, Trophy } from "lucide-react";
 
+import { useRef, useEffect } from "react";
+import { useMotionValue, useTransform, animate, useInView } from "framer-motion";
+
+function Counter({ value }: { value: string }) {
+  // Remove commas to parse the full number
+  const cleanValue = value.replace(/,/g, "");
+  const numMatch = cleanValue.match(/\d+/);
+  const number = numMatch ? parseInt(numMatch[0]) : 0;
+  
+  // Extract suffix by removing digits and commas
+  const suffix = value.replace(/[\d,]/g, "");
+
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-50px" });
+  
+  const count = useMotionValue(0);
+  // Format the number with commas
+  const rounded = useTransform(count, (latest) => Math.round(latest).toLocaleString());
+
+  useEffect(() => {
+    if (inView) {
+      animate(count, number, { duration: 2, ease: "easeOut" });
+    }
+  }, [count, inView, number]);
+
+  return (
+    <span ref={ref} className="flex items-center">
+      <motion.span>{rounded}</motion.span>
+      <span>{suffix}</span>
+    </span>
+  );
+}
+
 export default function Stats() {
   const { stats } = data;
 
@@ -54,7 +87,7 @@ export default function Stats() {
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl md:text-[2.75rem] leading-none font-bold text-white tracking-tight mb-2 max-md:text-3xl max-md:mb-1">
-                  {stat.value}
+                  <Counter value={stat.value} />
                 </span>
                 <span className="text-gray-200 font-medium text-sm md:text-base">
                   {stat.label}

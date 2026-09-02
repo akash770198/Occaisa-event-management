@@ -12,6 +12,15 @@ export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
@@ -118,7 +127,11 @@ export default function Header() {
         </div>
 
         {/* Overlapping Cyan Consultant Box - Aligned to right padding */}
-        <div className="hidden lg:flex absolute top-8 right-6 md:right-12 lg:right-18 h-[100px] xl:h-[110px] w-[230px] xl:w-[260px] z-20 overflow-hidden">
+        <div 
+          className={`hidden lg:flex absolute right-6 md:right-12 lg:right-18 w-[230px] xl:w-[260px] z-20 overflow-hidden transition-all duration-300 ease-in-out ${
+            isScrolled ? "top-8 h-[96px]" : "top-8 h-[100px] xl:h-[110px]"
+          }`}
+        >
           <motion.div
             initial={{ y: -150 }}
             animate={{ y: 0 }}

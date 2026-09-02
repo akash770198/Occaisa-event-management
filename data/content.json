@@ -37,6 +37,10 @@
             "href": "/our-story"
           },
           {
+            "label": "Our Partners",
+            "href": "/our-partners" 
+          },
+          {
             "label": "Our Team",
             "href": "/our-team"
           },
@@ -59,16 +63,16 @@
       },
       {
         "label": "Events",
-        "href": "#",
-        "hasDropdown": true
+        "href": "/events",
+        "hasDropdown": false
       },
       {
         "label": "Gallery",
-        "href": "#"
+        "href": "/gallery"
       },
       {
-        "label": "Faq's",
-        "href": "#"
+        "label": "Blog",
+        "href": "/blog"
       },
       {
         "label": "Career",
@@ -993,11 +997,11 @@
           },
           {
             "label": "Testimonials",
-            "href": "#"
+            "href": "/testimonial"
           },
           {
             "label": "Our Partners / Sponsors",
-            "href": "#"
+            "href": "/our-partners"
           },
           {
             "label": "FAQ",
@@ -2917,6 +2921,463 @@
       "title": "Occasia Events",
       "address": "123 Celebration Avenue,\nMumbai, Maharashtra 400001",
       "linkText": "View on Google Maps"
+    }
+  },
+  "eventsPage": {
+    "banner": {
+      "title": "Events",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Events",
+          "href": "/events"
+        }
+      ]
+    },
+    "upcoming": {
+      "titleStart": "Upcoming ",
+      "titleHighlight": "Events",
+      "description": "Discover and book exciting events curated to create unforgettable experiences and lasting memories.",
+      "events": [
+        {
+          "badge": "CORPORATE",
+          "title": "Annual Gala Night 2024",
+          "date": "24 Aug 2024",
+          "time": "6:00 PM Onwards",
+          "location": "The Grand Orion, Mumbai",
+          "description": "An enchanting evening of celebration, entertainment and memorable experiences.",
+          "image": "/Event/annual_gala_night.jpg",
+          "linkUrl": "/events/annual-gala-night"
+        },
+        {
+          "badge": "WEDDING",
+          "title": "Sunset Beach Wedding",
+          "date": "15 Sep 2024",
+          "time": "5:00 PM Onwards",
+          "location": "Taj Lands End, Mumbai",
+          "description": "A dreamy beachside wedding celebration filled with love and joy.",
+          "image": "/Event/sunset_beach_wedding.jpg",
+          "linkUrl": "/events/sunset-beach-wedding"
+        },
+        {
+          "badge": "CONFERENCE",
+          "title": "Leadership Summit 2024",
+          "date": "10 Oct 2024",
+          "time": "9:00 AM Onwards",
+          "location": "Jio World Convention Centre",
+          "description": "Inspiring talks, insightful sessions and powerful connections with industry leaders.",
+          "image": "/Event/leadership_summit.jpg",
+          "linkUrl": "/events/leadership-summit"
+        },
+        {
+          "badge": "CELEBRATION",
+          "title": "New Year Celebration 2025",
+          "date": "31 Dec 2024",
+          "time": "8:00 PM Onwards",
+          "location": "The St. Regis, Mumbai",
+          "description": "Ring in the new year with music, fun, and unforgettable memories.",
+          "image": "/Event/new_year_celebration.jpg",
+          "linkUrl": "/events/new-year-celebration"
+        },
+        {
+          "badge": "AWARDS",
+          "title": "Corporate Awards 2024",
+          "date": "05 Nov 2024",
+          "time": "6:30 PM Onwards",
+          "location": "Four Seasons Hotel, Mumbai",
+          "description": "Honoring excellence and celebrating achievements that inspire success.",
+          "image": "/Event/corporate_awards.jpg",
+          "linkUrl": "/events/corporate-awards"
+        }
+      ]
+    },
+    "sidebar": {
+      "featured": {
+        "badge": "FEATURED",
+        "title": "Annual Gala Night 2024",
+        "date": "24 Aug 2024",
+        "time": "6:00 PM Onwards",
+        "location": "The Grand Orion, Mumbai",
+        "description": "An enchanting evening of celebration, entertainment and memorable experiences.",
+        "image": "/Event/annual_gala_night.jpg",
+        "linkUrl": "/events/annual-gala-night"
+      },
+      "categories": {
+        "title": "Categories",
+        "items": [
+          { "label": "All Events", "count": 32, "icon": "LayoutGrid" },
+          { "label": "Corporate", "count": 12, "icon": "Briefcase" },
+          { "label": "Weddings", "count": "09", "icon": "Heart" },
+          { "label": "Conferences", "count": "06", "icon": "Mic" },
+          { "label": "Celebrations", "count": "04", "icon": "PartyPopper" },
+          { "label": "Awards", "count": "02", "icon": "Star" }
+        ],
+        "linkText": "View All Categories"
+      },
+      "newsletter": {
+        "title": "Get Event Updates\nin Your Inbox!",
+        "description": "Subscribe to get the latest event updates, trends and exclusive offers.",
+        "placeholder": "Enter your email address",
+        "buttonText": "Subscribe Now"
+      }
+    },
+    "detailTemplate": {
+      "fullDescription": "Join us for an unforgettable evening as we come together to celebrate our achievements, honor our teams and create memories that will last a lifetime. Enjoy a night filled with inspiring speeches, delicious cuisine, live entertainment and exciting surprises.",
+      "highlights": {
+        "title": "Event Highlights",
+        "items": [
+          {
+            "icon": "Users",
+            "title": "Live Entertainment",
+            "description": "Amazing performances throughout the night"
+          },
+          {
+            "icon": "Utensils",
+            "title": "Gourmet Dining",
+            "description": "A luxurious multi-course dining experience"
+          },
+          {
+            "icon": "Trophy",
+            "title": "Awards & Honors",
+            "description": "Recognizing excellence and achievements"
+          },
+          {
+            "icon": "Camera",
+            "title": "Photo Moments",
+            "description": "Capture memories at our theme photo zones"
+          },
+          {
+            "icon": "Gift",
+            "title": "Exciting Surprises",
+            "description": "Raffles, giveaways and exciting surprises"
+          }
+        ]
+      },
+      "schedule": {
+        "title": "Event Schedule",
+        "items": [
+          {
+            "time": "06:00 PM",
+            "title": "Guest Arrival & Welcome Drinks",
+            "description": "Guests arrive, check-in and enjoy welcome refreshments."
+          },
+          {
+            "time": "07:00 PM",
+            "title": "Opening Ceremony",
+            "description": "Welcome address and an overview of the evening."
+          },
+          {
+            "time": "07:30 PM",
+            "title": "Dinner & Networking",
+            "description": "Enjoy a gourmet dinner and connect with fellow guests."
+          },
+          {
+            "time": "08:30 PM",
+            "title": "Awards & Recognition",
+            "description": "Honoring our outstanding teams and individuals."
+          },
+          {
+            "time": "09:30 PM",
+            "title": "Live Entertainment",
+            "description": "Sit back and enjoy an exciting live performance."
+          },
+          {
+            "time": "10:30 PM",
+            "title": "After Party",
+            "description": "Dance the night away with music and celebrations."
+          }
+        ]
+      },
+      "registrationForm": {
+        "title": "Register for This Event",
+        "fields": {
+          "name": "Full Name *",
+          "email": "Email Address *",
+          "phone": "Phone Number *",
+          "company": "Company / Organization",
+          "seats": "Number of Seats *",
+          "message": "Message (Optional)"
+        },
+        "buttonText": "Register Now",
+        "securityText": "Your information is secure and will never be shared with anyone."
+      },
+      "relatedEventsTitle": "Related Events",
+      "viewAllText": "View All Events"
+    }
+  },
+  "galleryPage": {
+    "banner": {
+      "title": "Gallery",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Gallery", "href": "/gallery" }
+      ],
+      "image": "/PageBanner.svg"
+    },
+    "photoGallery": {
+      "badge": "OUR GALLERY",
+      "titleStart": "Memories That ",
+      "titleHighlight": "Last Forever",
+      "description": "Moments captured. Emotions preserved. Stories remembered.",
+      "images": [
+        { "src": "/Event/annual_gala_night.jpg", "alt": "Annual Gala Night" },
+        { "src": "/Event/corporate_awards.jpg", "alt": "Corporate Awards" },
+        { "src": "/Services/01_floral_wedding_stage.svg", "alt": "Floral Wedding Stage" },
+        { "src": "/Event/hero_event_bg.jpg", "alt": "Hero Event" },
+        { "src": "/Services/02_concert_event_stage.svg", "alt": "Concert Event Stage" },
+        { "src": "/Event/leadership_summit.jpg", "alt": "Leadership Summit" },
+        { "src": "/Event/new_year_celebration.jpg", "alt": "New Year Celebration" },
+        { "src": "/Event/sunset_beach_wedding.jpg", "alt": "Sunset Beach Wedding" },
+        { "src": "/Services/03_exhibition_trade_booth.svg", "alt": "Exhibition Trade Booth" }
+      ]
+    },
+    "videoGallery": {
+      "badge": "OUR VIDEO GALLERY",
+      "titleStart": "Moments That ",
+      "titleHighlight": "Inspire Forever",
+      "description": "Watch the highlights and relive the magic of our unforgettable events.",
+      "buttonText": "View More Videos",
+      "videos": [
+        { "thumbnail": "/Services/04_conference_keynote.svg", "alt": "Conference Keynote", "videoUrl": "#" },
+        { "thumbnail": "/Event/annual_gala_night.jpg", "alt": "Annual Gala Night", "videoUrl": "#" },
+        { "thumbnail": "/Services/05_birthday_celebration.svg", "alt": "Birthday Celebration", "videoUrl": "#" },
+        { "thumbnail": "/Event/corporate_awards.jpg", "alt": "Corporate Awards", "videoUrl": "#" },
+        { "thumbnail": "/Event/hero_event_bg.jpg", "alt": "Hero Event", "videoUrl": "#" },
+        { "thumbnail": "/Services/main_event_banner.svg", "alt": "Main Event Banner", "videoUrl": "#" },
+        { "thumbnail": "/Event/leadership_summit.jpg", "alt": "Leadership Summit", "videoUrl": "#" },
+        { "thumbnail": "/Event/new_year_celebration.jpg", "alt": "New Year Celebration", "videoUrl": "#" },
+        { "thumbnail": "/Event/sunset_beach_wedding.jpg", "alt": "Sunset Beach Wedding", "videoUrl": "#" }
+      ]
+    }
+  },
+  "testimonialPage": {
+    "banner": {
+      "title": "Testimonial",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Testimonial", "href": "/testimonial" }
+      ],
+      "image": "/PageBanner.svg"
+    },
+    "header": {
+      "badge": "TESTIMONIALS",
+      "titleStart": "What Our ",
+      "titleHighlight": "Clients Say",
+      "description": "Real stories from real people who trusted Occasia\nto make their events extraordinary."
+    },
+    "testimonials": [
+      {
+        "name": "Amit Verma",
+        "designation": "Marketing Manager\nDreamCraft Pvt. Ltd.",
+        "quote": "\"Occasia turned our annual gala into an unforgettable experience! From creative concepts to flawless execution, every detail was handled with utmost professionalism. Our guests are still talking about the event. Thank you, Occasia, for making it truly special!\"",
+        "image": "/Testimonials/amit_verma.svg"
+      },
+      {
+        "name": "Priya Mehra",
+        "designation": "Founder\nMehra Events",
+        "quote": "\"From the decor to the coordination, everything was beyond our expectations. Occasia's team is creative, responsive, and a joy to work with.\"",
+        "image": "/Testimonials/priya_mehra.svg"
+      },
+      {
+        "name": "Rohit Sharma",
+        "designation": "Head of Operations\nTechNova Solutions",
+        "quote": "\"Their attention to detail and ability to manage everything seamlessly is remarkable. Occasia is our go-to partner for every big event.\"",
+        "image": "/Testimonials/rohit_sharma.svg"
+      },
+      {
+        "name": "Sneha Kapoor",
+        "designation": "HR Manager\nBrightFuture India",
+        "quote": "\"Our team celebration was a huge hit! Occasia understood our vision perfectly and delivered an event full of energy and memorable moments.\"",
+        "image": "/Testimonials/sneha_kapoor.svg"
+      },
+      {
+        "name": "Vikram Sinha",
+        "designation": "Director\nGlobal Trade Expo",
+        "quote": "\"The exhibition setup was outstanding and helped us make a strong impact. Professional, punctual, and extremely well-organized team!\"",
+        "image": "/Testimonials/vikram_sinha.svg"
+      },
+      {
+        "name": "Ananya Iyer",
+        "designation": "Event Lead\nStarline Entertainment",
+        "quote": "\"Occasia doesn't just plan events, they create experiences! The passion and dedication of their team truly make a difference.\"",
+        "image": "/Testimonials/ananya_iyer.svg"
+      }
+    ]
+  },
+  "partnersPage": {
+    "banner": {
+      "title": "Our Partners",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Partners", "href": "/our-partners" }
+      ]
+    },
+    "header": {
+      "badge": "OUR PARTNERS",
+      "titleStart": "Proud to Collaborate with",
+      "titleHighlight": "Incredible Partners!"
+    },
+    "partners": [
+      { "name": "Taj Hotels", "image": "/OurPartners/taj_hotels.svg" },
+      { "name": "ITC Hotels", "image": "/OurPartners/itc_hotels.svg" },
+      { "name": "The Leela", "image": "/OurPartners/the_leela.svg" },
+      { "name": "The Oberoi Group", "image": "/OurPartners/oberoi_group.svg" },
+      { "name": "Radisson", "image": "/OurPartners/radisson.svg" },
+      { "name": "W Hotels", "image": "/OurPartners/w_hotels.svg" },
+      { "name": "Le Meridien", "image": "/OurPartners/le_meridien.svg" },
+      { "name": "JW Marriott", "image": "/OurPartners/jw_marriott.svg" },
+      { "name": "Hyatt", "image": "/OurPartners/hyatt.svg" },
+      { "name": "Sheraton", "image": "/OurPartners/sheraton.svg" },
+      { "name": "Showmakerz", "image": "/OurPartners/showmakerz.svg" },
+      { "name": "Sound Wave", "image": "/OurPartners/sound_wave.svg" },
+      { "name": "Rimzim", "image": "/OurPartners/rimzim.svg" },
+      { "name": "The Flower Studio", "image": "/OurPartners/flower_studio.svg" },
+      { "name": "Jimmy Jib Films", "image": "/OurPartners/jimmy_jib.svg" },
+      { "name": "Print Express", "image": "/OurPartners/print_express.svg" },
+      { "name": "Party Shakers", "image": "/OurPartners/party_shakers.svg" },
+      { "name": "Bolt Transport", "image": "/OurPartners/bolt_transport.svg" },
+      { "name": "Zee Events", "image": "/OurPartners/zee_events.svg" },
+      { "name": "Book My Show", "image": "/OurPartners/book_my_show.svg" }
+    ]
+  },
+  "blogPage": {
+    "banner": {
+      "title": "Blogs",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Blogs", "href": "/blog" }
+      ]
+    },
+    "header": {
+      "badge": "OUR BLOG",
+      "titleStart": "Ideas, Inspiration",
+      "titleHighlight": "& Insights",
+      "subtitle": "Expert tips, real stories and the latest trends to help you plan unforgettable events."
+    },
+    "mainPosts": [
+      {
+        "title": "How to Plan a Successful Corporate Gala Event",
+        "excerpt": "From setting clear objectives to choosing the perfect venue and managing details, here's your complete guide to hosting a memorable corporate gala.",
+        "author": "Priya Mehra",
+        "authorImage": "/Testimonials/priya_mehra.svg",
+        "date": "22 Aug 2026",
+        "image": "/Event/annual_gala_night.jpg",
+        "href": "/blog/corporate-gala"
+      },
+      {
+        "title": "Destination Wedding Checklist: Everything You Need",
+        "excerpt": "Planning a destination wedding? Here's a complete checklist to help you manage entertainment, logistics, décor and guest experience with ease.",
+        "author": "Rohan Kapoor",
+        "authorImage": "/Testimonials/rohit_sharma.svg",
+        "date": "18 Aug 2026",
+        "image": "/Event/sunset_beach_wedding.jpg",
+        "href": "/blog/destination-wedding"
+      },
+      {
+        "title": "Top Event Trends to Watch in 2026",
+        "excerpt": "Stay ahead with the latest trends in event planning—from immersive experiences and sustainable setups to smart technology and personalized guest journeys.",
+        "author": "Ananya Iyer",
+        "authorImage": "/Testimonials/ananya_iyer.svg",
+        "date": "13 Aug 2026",
+        "image": "/Event/leadership_summit.jpg",
+        "href": "/blog/event-trends-2026"
+      }
+    ],
+    "sidebar": {
+      "popularPosts": [
+        {
+          "title": "5 Creative Theme Ideas for Your Next Event",
+          "date": "20 Jul 2026",
+          "image": "/Event/corporate_awards.jpg",
+          "href": "/blog/theme-ideas"
+        },
+        {
+          "title": "How to Create an Amazing Guest Experience",
+          "date": "17 Jul 2026",
+          "image": "/Event/new_year_celebration.jpg",
+          "href": "/blog/guest-experience"
+        },
+        {
+          "title": "Event Lighting Tips to Set the Perfect Mood",
+          "date": "14 Jul 2026",
+          "image": "/Event/hero_event_bg.jpg",
+          "href": "/blog/event-lighting"
+        }
+      ],
+      "newsletter": {
+        "title": "Get Event Inspiration in Your Inbox!",
+        "subtitle": "Subscribe to our newsletter and get the latest tips, trends and offers delivered straight to you.",
+        "placeholder": "Enter your email address",
+        "buttonText": "Subscribe Now"
+      },
+      "contact": {
+        "title": "Planning an Event?\nWe're Here to Help!",
+        "subtitle": "Let's create something extraordinary together.",
+        "buttonText": "Contact Us",
+        "href": "/contact"
+      }
+    }
+  },
+  "blogDetailPage": {
+    "banner": {
+      "title": "Blog Detail",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Blogs", "href": "/blog" },
+        { "label": "Blog Detail", "href": "#" }
+      ]
+    },
+    "post": {
+      "title": "How to Plan a Successful Corporate Gala Event",
+      "intro": "From setting clear objectives to choosing the perfect venue and managing details, here's your complete guide to hosting a memorable corporate gala.",
+      "author": {
+        "name": "Priya Mehra",
+        "designation": "Event Planner",
+        "image": "/Testimonials/priya_mehra.svg"
+      },
+      "date": "22 Aug 2026",
+      "mainImage": "/Event/annual_gala_night.jpg",
+      "sections": [
+        {
+          "heading": "1. Define Your Objectives",
+          "content": "Start by understanding the purpose of your gala. Is it to celebrate achievements, strengthen client relationships, or raise funds? Clear objectives will shape every decision you make."
+        },
+        {
+          "heading": "2. Set a Realistic Budget",
+          "content": "A well-planned budget ensures you get the best value without overspending. Allocate funds for venue, catering, décor, entertainment, logistics, and marketing."
+        },
+        {
+          "heading": "3. Choose the Perfect Venue",
+          "content": "The venue sets the tone for your event. Look for a location that reflects your brand image and can comfortably accommodate your guests with the right amenities."
+        }
+      ],
+      "gallery": [
+        "/Event/annual_gala_night.jpg",
+        "/Event/sunset_beach_wedding.jpg",
+        "/Event/corporate_awards.jpg"
+      ],
+      "moreSections": [
+        {
+          "heading": "4. Plan Engaging Entertainment",
+          "content": "Entertainment keeps your guests engaged and makes your gala unforgettable. Consider a mix of live music, performances, and interactive experiences."
+        },
+        {
+          "heading": "5. Focus on the Guest Experience",
+          "content": "From RSVP to the final thank-you note, every touchpoint matters. Personalized gestures, seamless logistics, and attentive service create a lasting impression."
+        }
+      ],
+      "quote": "A successful corporate gala is all about thoughtful planning, attention to detail, and creating meaningful experiences for your guests.",
+      "conclusion": {
+        "heading": "6. Promote and Follow Up",
+        "content": "Build excitement before the event with targeted invitations and social media buzz. After the event, share highlights and thank your attendees for being part of the celebration."
+      }
     }
   }
 }

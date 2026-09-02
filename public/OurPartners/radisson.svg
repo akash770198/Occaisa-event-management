@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+    <defs>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Great+Vibes&amp;family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Dancing+Script:wght@700&amp;family=Alex+Brush&amp;family=Fredoka+One&amp;display=swap');
+        text { dominant-baseline: middle; text-anchor: middle; }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .great-vibes { font-family: 'Great Vibes', cursive; }
+        .dancing { font-family: 'Dancing Script', cursive; }
+        .alex-brush { font-family: 'Alex Brush', cursive; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+      </style>
+    </defs>
+    
+    <g fill="#1a1a1a">
+      <!-- Using Alex Brush for exactly matching the Radisson script -->
+      <text x="200" y="115" class="alex-brush" font-size="80">Radisson</text>
+      <text x="200" y="170" class="montserrat" font-size="14" font-weight="700" letter-spacing="4">HOTELS &amp; RESORTS</text>
+    </g>
+  
+  </svg>

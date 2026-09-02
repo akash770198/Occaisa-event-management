@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+    <defs>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Great+Vibes&amp;family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Dancing+Script:wght@700&amp;family=Alex+Brush&amp;family=Fredoka+One&amp;display=swap');
+        text { dominant-baseline: middle; text-anchor: middle; }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .great-vibes { font-family: 'Great Vibes', cursive; }
+        .dancing { font-family: 'Dancing Script', cursive; }
+        .alex-brush { font-family: 'Alex Brush', cursive; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+      </style>
+    </defs>
+    
+    <g fill="#193a6f">
+      <text x="200" y="125" class="montserrat" font-size="64" font-weight="900" letter-spacing="4">HYATT</text>
+      <!-- The red swoosh across the A -->
+      <path d="M 185 120 Q 215 90 245 120 Q 215 105 185 120 Z" fill="#e31837" />
+    </g>
+  
+  </svg>

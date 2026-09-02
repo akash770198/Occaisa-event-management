@@ -20,7 +20,7 @@ export default function PageBanner({ title, image, breadcrumbs }: PageBannerProp
   return (
     <section className="relative w-full h-[260px] md:h-[320px] lg:h-[380px] flex items-center overflow-hidden">
       <motion.div
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
