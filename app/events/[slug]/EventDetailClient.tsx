@@ -140,9 +140,9 @@ export default function EventDetailClient({ slug }: { slug: string }) {
                   {detailTemplate.highlights.items.map((item: any, idx: number) => {
                     const Icon = iconMap[item.icon];
                     return (
-                      <div key={idx} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                        <div className="w-14 h-14 rounded-full bg-[#bd00ff]/10 flex items-center justify-center mb-4">
-                          <Icon className="w-6 h-6 text-[#bd00ff]" />
+                      <div key={idx} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col items-center text-center hover:shadow-md transition-all group hover:-translate-y-1">
+                        <div className="w-14 h-14 rounded-full bg-[#bd00ff]/10 flex items-center justify-center mb-4 group-hover:bg-[#bd00ff] group-hover:scale-110 transition-all duration-300 shadow-[0_0_0_0_rgba(189,0,255,0)] group-hover:shadow-[0_8px_16px_-6px_rgba(189,0,255,0.5)]">
+                          <Icon className="w-6 h-6 text-[#bd00ff] group-hover:text-white transition-colors duration-300" />
                         </div>
                         <h4 className="text-[#0b132b] font-bold text-sm mb-2">{item.title}</h4>
                         <p className="text-gray-500 text-xs leading-relaxed">{item.description}</p>
@@ -219,7 +219,7 @@ export default function EventDetailClient({ slug }: { slug: string }) {
 
                       <div className="flex flex-col gap-1.5">
                         <label className="text-xs font-bold text-[#0b132b] ml-1">{detailTemplate.registrationForm.fields.phone}</label>
-                        <input type="tel" placeholder="Enter your phone number" className="w-full bg-[#f8f9fc] border border-gray-100 rounded-xl px-4 py-3 text-sm text-[#0b132b] placeholder:text-[#0b132b]/60 focus:outline-none focus:ring-2 focus:ring-[#bd00ff]/50 focus:bg-white transition-colors" />
+                        <input type="tel" onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} placeholder="Enter your phone number" className="w-full bg-[#f8f9fc] border border-gray-100 rounded-xl px-4 py-3 text-sm text-[#0b132b] placeholder:text-[#0b132b]/60 focus:outline-none focus:ring-2 focus:ring-[#bd00ff]/50 focus:bg-white transition-colors" />
                       </div>
 
                       <div className="flex flex-col gap-1.5">

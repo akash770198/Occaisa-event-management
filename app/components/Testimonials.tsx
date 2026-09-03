@@ -88,14 +88,14 @@ export default function Testimonials() {
 
             {/* Foreground Portrait Image */}
             <div className="relative z-10 w-[70%] lg:w-[65%] aspect-[3/4] mr-4 lg:-mr-8 mt-12 lg:mt-16 bg-white overflow-hidden p-3 shadow-2xl">
-              <div className="relative w-full h-full overflow-hidden bg-gray-100">
+              <div className="relative w-full h-full overflow-hidden bg-[#05001a]">
                 <AnimatePresence>
                   <motion.div
                     key={currentIndex}
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 30 }}
-                    transition={{ duration: 0.4 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.8 }}
                     className="absolute inset-0"
                   >
                     <Image

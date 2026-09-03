@@ -1,7 +1,7 @@
 import PageBanner from "@/app/components/PageBanner";
-import AwardsIntro from "@/app/components/AwardsIntro";
-import AwardsAchievements from "@/app/components/AwardsAchievements";
-import AwardsRecognitions from "@/app/components/AwardsRecognitions";
+import AwardsIntro from "@/app/awards/AwardsIntro";
+import AwardsAchievements from "@/app/awards/AwardsAchievements";
+import AwardsRecognitions from "@/app/awards/AwardsRecognitions";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

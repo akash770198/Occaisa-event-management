@@ -38,15 +38,11 @@
           },
           {
             "label": "Our Partners",
-            "href": "/our-partners" 
+            "href": "/our-partners"
           },
           {
             "label": "Our Team",
             "href": "/our-team"
-          },
-          {
-            "label": "Awards",
-            "href": "/awards"
           }
         ],
         "subitems": [
@@ -75,8 +71,8 @@
         "href": "/blog"
       },
       {
-        "label": "Career",
-        "href": "#"
+        "label": "Awards",
+        "href": "/awards"
       },
       {
         "label": "Contact",
@@ -95,7 +91,12 @@
     "titleEnd": " Executed",
     "description": "From corporate gatherings to grand celebrations, we create unforgettable experiences crafted with creativity, precision and passion.",
     "button1Text": "Get Appointment →",
-    "button2Text": "Play Intro Video"
+    "button2Text": "Play Intro Video",
+    "images": [
+      "/Banner/event_banner3.svg",
+      "/Banner/event_banner.svg",
+      "/Banner/event_banner2.svg"
+    ]
   },
   "about": {
     "yearsExperience": "12+",
@@ -105,7 +106,8 @@
     "titleHighlight": "Passion!",
     "paragraph1": "As an event management company, we are dedicated to executing your vision flawlessly. From corporate gatherings to grand celebrations, we handle every detail with creativity and care.",
     "paragraph2": "With years of experience in managing diverse events, we ensure a seamless experience for you and your guests. Allow us to take the stress out of event planning so you can enjoy every moment.",
-    "buttonText": "Discover More >"
+    "buttonText": "Discover More >",
+    "buttonLink": "/about-us"
   },
   "aboutPage": {
     "banner": {
@@ -905,7 +907,7 @@
       }
     ],
     "viewAllText": "View All Blogs",
-    "viewAllLink": "#"
+    "viewAllLink": "/blog"
   },
   "footer": {
     "about": {
@@ -935,11 +937,11 @@
           },
           {
             "label": "Mission",
-            "href": "/about#mission-vision"
+            "href": "/mission"
           },
           {
             "label": "Vision",
-            "href": "/about#mission-vision"
+            "href": "/vision"
           },
           {
             "label": "Our Story",
@@ -954,8 +956,8 @@
             "href": "/our-team"
           },
           {
-            "label": "Team Detail",
-            "href": "#"
+            "label": "Gallery",
+            "href": "/gallery"
           }
         ]
       },
@@ -964,23 +966,15 @@
         "links": [
           {
             "label": "Services",
-            "href": "#"
-          },
-          {
-            "label": "Service Detail",
-            "href": "#"
+            "href": "/services"
           },
           {
             "label": "Events",
-            "href": "#"
-          },
-          {
-            "label": "Event Detail",
-            "href": "#"
+            "href": "/events"
           },
           {
             "label": "Why Choose Us",
-            "href": "/about#why-choose-us"
+            "href": "/why-choose-us"
           }
         ]
       },
@@ -989,11 +983,7 @@
         "links": [
           {
             "label": "Blog / News",
-            "href": "#"
-          },
-          {
-            "label": "Blog Detail",
-            "href": "#"
+            "href": "/blog"
           },
           {
             "label": "Testimonials",
@@ -1005,7 +995,7 @@
           },
           {
             "label": "FAQ",
-            "href": "#"
+            "href": "/faq"
           }
         ]
       },
@@ -1014,31 +1004,31 @@
         "links": [
           {
             "label": "Contact Us",
-            "href": "#"
-          },
-          {
-            "label": "Gallery",
-            "href": "#"
+            "href": "/contact"
           },
           {
             "label": "Careers",
-            "href": "#"
+            "href": "/career"
           },
           {
-            "label": "Career Detail",
-            "href": "#"
+            "label": "Get a Quote",
+            "href": "/get-a-quote"
           },
           {
             "label": "Privacy Policy",
-            "href": "#"
+            "href": "/privacy-policy"
           },
           {
             "label": "Cookie Policy",
-            "href": "#"
+            "href": "/privacy-policy"
           },
           {
             "label": "Refund / Cancellation Policy",
-            "href": "#"
+            "href": "/privacy-policy"
+          },
+          {
+            "label": "Sitemap",
+            "href": "/sitemap"
           },
           {
             "label": "Disclaimer",
@@ -3009,12 +2999,36 @@
       "categories": {
         "title": "Categories",
         "items": [
-          { "label": "All Events", "count": 32, "icon": "LayoutGrid" },
-          { "label": "Corporate", "count": 12, "icon": "Briefcase" },
-          { "label": "Weddings", "count": "09", "icon": "Heart" },
-          { "label": "Conferences", "count": "06", "icon": "Mic" },
-          { "label": "Celebrations", "count": "04", "icon": "PartyPopper" },
-          { "label": "Awards", "count": "02", "icon": "Star" }
+          {
+            "label": "All Events",
+            "count": 32,
+            "icon": "LayoutGrid"
+          },
+          {
+            "label": "Corporate",
+            "count": 12,
+            "icon": "Briefcase"
+          },
+          {
+            "label": "Weddings",
+            "count": "09",
+            "icon": "Heart"
+          },
+          {
+            "label": "Conferences",
+            "count": "06",
+            "icon": "Mic"
+          },
+          {
+            "label": "Celebrations",
+            "count": "04",
+            "icon": "PartyPopper"
+          },
+          {
+            "label": "Awards",
+            "count": "02",
+            "icon": "Star"
+          }
         ],
         "linkText": "View All Categories"
       },
@@ -3093,7 +3107,7 @@
         ]
       },
       "registrationForm": {
-        "title": "Register for This Event",
+        "title": "Enquire About This Event",
         "fields": {
           "name": "Full Name *",
           "email": "Email Address *",
@@ -3102,7 +3116,7 @@
           "seats": "Number of Seats *",
           "message": "Message (Optional)"
         },
-        "buttonText": "Register Now",
+        "buttonText": "Enquire Now",
         "securityText": "Your information is secure and will never be shared with anyone."
       },
       "relatedEventsTitle": "Related Events",
@@ -3113,8 +3127,14 @@
     "banner": {
       "title": "Gallery",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Gallery", "href": "/gallery" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery"
+        }
       ],
       "image": "/PageBanner.svg"
     },
@@ -3124,15 +3144,42 @@
       "titleHighlight": "Last Forever",
       "description": "Moments captured. Emotions preserved. Stories remembered.",
       "images": [
-        { "src": "/Event/annual_gala_night.jpg", "alt": "Annual Gala Night" },
-        { "src": "/Event/corporate_awards.jpg", "alt": "Corporate Awards" },
-        { "src": "/Services/01_floral_wedding_stage.svg", "alt": "Floral Wedding Stage" },
-        { "src": "/Event/hero_event_bg.jpg", "alt": "Hero Event" },
-        { "src": "/Services/02_concert_event_stage.svg", "alt": "Concert Event Stage" },
-        { "src": "/Event/leadership_summit.jpg", "alt": "Leadership Summit" },
-        { "src": "/Event/new_year_celebration.jpg", "alt": "New Year Celebration" },
-        { "src": "/Event/sunset_beach_wedding.jpg", "alt": "Sunset Beach Wedding" },
-        { "src": "/Services/03_exhibition_trade_booth.svg", "alt": "Exhibition Trade Booth" }
+        {
+          "src": "/Event/annual_gala_night.jpg",
+          "alt": "Annual Gala Night"
+        },
+        {
+          "src": "/Event/corporate_awards.jpg",
+          "alt": "Corporate Awards"
+        },
+        {
+          "src": "/Services/01_floral_wedding_stage.svg",
+          "alt": "Floral Wedding Stage"
+        },
+        {
+          "src": "/Event/hero_event_bg.jpg",
+          "alt": "Hero Event"
+        },
+        {
+          "src": "/Services/02_concert_event_stage.svg",
+          "alt": "Concert Event Stage"
+        },
+        {
+          "src": "/Event/leadership_summit.jpg",
+          "alt": "Leadership Summit"
+        },
+        {
+          "src": "/Event/new_year_celebration.jpg",
+          "alt": "New Year Celebration"
+        },
+        {
+          "src": "/Event/sunset_beach_wedding.jpg",
+          "alt": "Sunset Beach Wedding"
+        },
+        {
+          "src": "/Services/03_exhibition_trade_booth.svg",
+          "alt": "Exhibition Trade Booth"
+        }
       ]
     },
     "videoGallery": {
@@ -3142,15 +3189,51 @@
       "description": "Watch the highlights and relive the magic of our unforgettable events.",
       "buttonText": "View More Videos",
       "videos": [
-        { "thumbnail": "/Services/04_conference_keynote.svg", "alt": "Conference Keynote", "videoUrl": "#" },
-        { "thumbnail": "/Event/annual_gala_night.jpg", "alt": "Annual Gala Night", "videoUrl": "#" },
-        { "thumbnail": "/Services/05_birthday_celebration.svg", "alt": "Birthday Celebration", "videoUrl": "#" },
-        { "thumbnail": "/Event/corporate_awards.jpg", "alt": "Corporate Awards", "videoUrl": "#" },
-        { "thumbnail": "/Event/hero_event_bg.jpg", "alt": "Hero Event", "videoUrl": "#" },
-        { "thumbnail": "/Services/main_event_banner.svg", "alt": "Main Event Banner", "videoUrl": "#" },
-        { "thumbnail": "/Event/leadership_summit.jpg", "alt": "Leadership Summit", "videoUrl": "#" },
-        { "thumbnail": "/Event/new_year_celebration.jpg", "alt": "New Year Celebration", "videoUrl": "#" },
-        { "thumbnail": "/Event/sunset_beach_wedding.jpg", "alt": "Sunset Beach Wedding", "videoUrl": "#" }
+        {
+          "thumbnail": "/Services/04_conference_keynote.svg",
+          "alt": "Conference Keynote",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/annual_gala_night.jpg",
+          "alt": "Annual Gala Night",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Services/05_birthday_celebration.svg",
+          "alt": "Birthday Celebration",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/corporate_awards.jpg",
+          "alt": "Corporate Awards",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/hero_event_bg.jpg",
+          "alt": "Hero Event",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Services/main_event_banner.svg",
+          "alt": "Main Event Banner",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/leadership_summit.jpg",
+          "alt": "Leadership Summit",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/new_year_celebration.jpg",
+          "alt": "New Year Celebration",
+          "videoUrl": "#"
+        },
+        {
+          "thumbnail": "/Event/sunset_beach_wedding.jpg",
+          "alt": "Sunset Beach Wedding",
+          "videoUrl": "#"
+        }
       ]
     }
   },
@@ -3158,8 +3241,14 @@
     "banner": {
       "title": "Testimonial",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Testimonial", "href": "/testimonial" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Testimonial",
+          "href": "/testimonial"
+        }
       ],
       "image": "/PageBanner.svg"
     },
@@ -3213,8 +3302,14 @@
       "title": "Our Partners",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Partners", "href": "/our-partners" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Partners",
+          "href": "/our-partners"
+        }
       ]
     },
     "header": {
@@ -3223,26 +3318,86 @@
       "titleHighlight": "Incredible Partners!"
     },
     "partners": [
-      { "name": "Taj Hotels", "image": "/OurPartners/taj_hotels.svg" },
-      { "name": "ITC Hotels", "image": "/OurPartners/itc_hotels.svg" },
-      { "name": "The Leela", "image": "/OurPartners/the_leela.svg" },
-      { "name": "The Oberoi Group", "image": "/OurPartners/oberoi_group.svg" },
-      { "name": "Radisson", "image": "/OurPartners/radisson.svg" },
-      { "name": "W Hotels", "image": "/OurPartners/w_hotels.svg" },
-      { "name": "Le Meridien", "image": "/OurPartners/le_meridien.svg" },
-      { "name": "JW Marriott", "image": "/OurPartners/jw_marriott.svg" },
-      { "name": "Hyatt", "image": "/OurPartners/hyatt.svg" },
-      { "name": "Sheraton", "image": "/OurPartners/sheraton.svg" },
-      { "name": "Showmakerz", "image": "/OurPartners/showmakerz.svg" },
-      { "name": "Sound Wave", "image": "/OurPartners/sound_wave.svg" },
-      { "name": "Rimzim", "image": "/OurPartners/rimzim.svg" },
-      { "name": "The Flower Studio", "image": "/OurPartners/flower_studio.svg" },
-      { "name": "Jimmy Jib Films", "image": "/OurPartners/jimmy_jib.svg" },
-      { "name": "Print Express", "image": "/OurPartners/print_express.svg" },
-      { "name": "Party Shakers", "image": "/OurPartners/party_shakers.svg" },
-      { "name": "Bolt Transport", "image": "/OurPartners/bolt_transport.svg" },
-      { "name": "Zee Events", "image": "/OurPartners/zee_events.svg" },
-      { "name": "Book My Show", "image": "/OurPartners/book_my_show.svg" }
+      {
+        "name": "Taj Hotels",
+        "image": "/OurPartners/taj_hotels.svg"
+      },
+      {
+        "name": "ITC Hotels",
+        "image": "/OurPartners/itc_hotels.svg"
+      },
+      {
+        "name": "The Leela",
+        "image": "/OurPartners/the_leela.svg"
+      },
+      {
+        "name": "The Oberoi Group",
+        "image": "/OurPartners/oberoi_group.svg"
+      },
+      {
+        "name": "Radisson",
+        "image": "/OurPartners/radisson.svg"
+      },
+      {
+        "name": "W Hotels",
+        "image": "/OurPartners/w_hotels.svg"
+      },
+      {
+        "name": "Le Meridien",
+        "image": "/OurPartners/le_meridien.svg"
+      },
+      {
+        "name": "JW Marriott",
+        "image": "/OurPartners/jw_marriott.svg"
+      },
+      {
+        "name": "Hyatt",
+        "image": "/OurPartners/hyatt.svg"
+      },
+      {
+        "name": "Sheraton",
+        "image": "/OurPartners/sheraton.svg"
+      },
+      {
+        "name": "Showmakerz",
+        "image": "/OurPartners/showmakerz.svg"
+      },
+      {
+        "name": "Sound Wave",
+        "image": "/OurPartners/sound_wave.svg"
+      },
+      {
+        "name": "Rimzim",
+        "image": "/OurPartners/rimzim.svg"
+      },
+      {
+        "name": "The Flower Studio",
+        "image": "/OurPartners/flower_studio.svg"
+      },
+      {
+        "name": "Jimmy Jib Films",
+        "image": "/OurPartners/jimmy_jib.svg"
+      },
+      {
+        "name": "Print Express",
+        "image": "/OurPartners/print_express.svg"
+      },
+      {
+        "name": "Party Shakers",
+        "image": "/OurPartners/party_shakers.svg"
+      },
+      {
+        "name": "Bolt Transport",
+        "image": "/OurPartners/bolt_transport.svg"
+      },
+      {
+        "name": "Zee Events",
+        "image": "/OurPartners/zee_events.svg"
+      },
+      {
+        "name": "Book My Show",
+        "image": "/OurPartners/book_my_show.svg"
+      }
     ]
   },
   "blogPage": {
@@ -3250,8 +3405,14 @@
       "title": "Blogs",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Blogs", "href": "/blog" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Blogs",
+          "href": "/blog"
+        }
       ]
     },
     "header": {
@@ -3329,9 +3490,18 @@
       "title": "Blog Detail",
       "image": "/PageBanner.svg",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Blogs", "href": "/blog" },
-        { "label": "Blog Detail", "href": "#" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Blogs",
+          "href": "/blog"
+        },
+        {
+          "label": "Blog Detail",
+          "href": "#"
+        }
       ]
     },
     "post": {
@@ -3379,5 +3549,1371 @@
         "content": "Build excitement before the event with targeted invitations and social media buzz. After the event, share highlights and thank your attendees for being part of the celebration."
       }
     }
+  },
+  "faqPage": {
+    "banner": {
+      "title": "Frequently Asked Questions",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "href": "/faq"
+        }
+      ]
+    },
+    "header": {
+      "badge": "FAQS",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our event planning services."
+    },
+    "faqs": [
+      {
+        "question": "What types of events do you organize?",
+        "answer": "We organize a wide range of events including weddings, receptions, engagements, birthday parties, corporate events, product launches, award ceremonies, and private parties. Whatever the occasion, we make it memorable!",
+        "image": "/Event/sunset_beach_wedding.jpg"
+      },
+      {
+        "question": "How far in advance should I book your services?",
+        "answer": "We recommend booking at least 3-6 months in advance for large events and weddings to ensure availability of preferred venues and vendors. However, we can also accommodate shorter timelines depending on the event scale."
+      },
+      {
+        "question": "Can you work within my budget?",
+        "answer": "Absolutely! We pride ourselves on creating spectacular events tailored to various budgets. We will discuss your financial parameters during our initial consultation and provide a customized proposal."
+      },
+      {
+        "question": "Do you provide custom themes and décor?",
+        "answer": "Yes, our creative team specializes in designing bespoke themes and décor that perfectly align with your vision, ensuring your event is unique and personalized."
+      },
+      {
+        "question": "What is included in your event planning services?",
+        "answer": "Our comprehensive services cover everything from conceptualization, venue selection, vendor management, and décor, to on-the-day coordination and post-event wrap-up."
+      },
+      {
+        "question": "Do you handle vendor management?",
+        "answer": "Yes, we handle all vendor communications, negotiations, and coordination to ensure a seamless experience, allowing you to relax and enjoy your event."
+      },
+      {
+        "question": "What happens if there are changes or cancellations?",
+        "answer": "We have clear policies outlined in our contracts regarding changes and cancellations. Our team is flexible and will work closely with you to navigate any unforeseen circumstances."
+      },
+      {
+        "question": "How do I get started with planning my event?",
+        "answer": "Simply contact us via phone, email, or through our website to schedule an initial consultation. We'll discuss your ideas, requirements, and how we can bring your vision to life."
+      }
+    ],
+    "sidebar": {
+      "newsletter": {
+        "badge": "// newsletter",
+        "title": "Stay Updated with Our Latest Events!",
+        "subtitle": "Subscribe to our newsletter for event tips, inspiration and exclusive offers.",
+        "placeholder": "Your email address",
+        "buttonIcon": "send"
+      },
+      "features": {
+        "title": "Why Choose Occasia?",
+        "items": [
+          {
+            "icon": "award",
+            "title": "Experienced Team",
+            "desc": "Years of experience in creating seamless and memorable events."
+          },
+          {
+            "icon": "lightbulb",
+            "title": "Creative & Unique Ideas",
+            "desc": "Innovative concepts tailored to bring your vision to life."
+          },
+          {
+            "icon": "shield",
+            "title": "End-to-End Support",
+            "desc": "From planning to execution, we handle everything for you."
+          },
+          {
+            "icon": "thumbs-up",
+            "title": "Client Satisfaction",
+            "desc": "Our happy clients and successful events speak for us."
+          }
+        ]
+      }
+    },
+    "helpSection": {
+      "title": "Still have questions? We're here to help!",
+      "subtitle": "Our team is available 24/7 to assist you with your event planning needs.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/contact",
+      "phoneLabel": "Call Us Anytime",
+      "phoneNumber": "+1 1234567890"
+    }
+  },
+  "careerPage": {
+    "banner": {
+      "title": "Career",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Career",
+          "href": "/career"
+        }
+      ]
+    },
+    "intro": {
+      "badge": "CAREERS",
+      "titleStart": "Build Experiences.",
+      "titleHighlight": "Shape Memories.",
+      "description": "At Occasia, we don't just plan events, we create unforgettable experiences. Join our passionate team and be a part of something extraordinary.",
+      "image": "/Event/hero_event_bg.jpg"
+    },
+    "jobsList": {
+      "jobs": [
+        {
+          "title": "Event Manager",
+          "department": "Events",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Plan, execute and manage events from concept to completion while ensuring exceptional client satisfaction.",
+          "category": "Events",
+          "posted": "2 days ago",
+          "icon": "calendar",
+          "slug": "event-manager",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "2 days ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Mid-Senior level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Events"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 80,000 - ₹ 1,20,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Senior Event Planner",
+          "department": "Events",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Lead event planning projects and coordinate with clients, vendors and internal teams to deliver outstanding experiences.",
+          "category": "Events",
+          "posted": "4 days ago",
+          "icon": "users",
+          "slug": "senior-event-planner",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "4 days ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Mid-Senior level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Events"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 40,000 - ₹ 70,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Client Relationship Executive",
+          "department": "Sales & Client Relations",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Build strong client relationships, understand their needs and provide tailored event solutions.",
+          "category": "Sales",
+          "posted": "5 days ago",
+          "icon": "handshake",
+          "slug": "client-relationship-executive",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "5 days ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Entry-Mid level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Sales & Client Relations"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 40,000 - ₹ 70,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Creative Designer",
+          "department": "Design",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Design creative concepts, themes and visuals that bring events to life and leave a lasting impression.",
+          "category": "Design",
+          "posted": "1 week ago",
+          "icon": "pen",
+          "slug": "creative-designer",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "1 week ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Entry-Mid level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Design"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 40,000 - ₹ 70,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Production Manager",
+          "department": "Production",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Oversee production and logistics, manage vendor coordination and ensure flawless execution on event day.",
+          "category": "Production",
+          "posted": "1 week ago",
+          "icon": "settings",
+          "slug": "production-manager",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "1 week ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Mid-Senior level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Production"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 80,000 - ₹ 1,20,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Finance Executive",
+          "department": "Finance",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Manage budgets, vendor payments and financial records for events and projects.",
+          "category": "Finance",
+          "posted": "1 week ago",
+          "icon": "file-text",
+          "slug": "finance-executive",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "1 week ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Entry-Mid level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Finance"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 40,000 - ₹ 70,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "HR Executive",
+          "department": "Human Resources",
+          "location": "Mumbai, Maharashtra",
+          "type": "Full-time",
+          "description": "Support recruitment, onboarding and HR operations to build a happy and high-performing team.",
+          "category": "HR",
+          "posted": "2 weeks ago",
+          "icon": "user",
+          "slug": "hr-executive",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "2 weeks ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Entry-Mid level"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Human Resources"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Full-time"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 40,000 - ₹ 70,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Intern – Event Planning",
+          "department": "Internship",
+          "location": "Mumbai, Maharashtra",
+          "type": "Internship",
+          "description": "Assist in event planning and coordination while learning the ropes of the event industry.",
+          "category": "Internship",
+          "posted": "3 weeks ago",
+          "icon": "graduation-cap",
+          "slug": "intern-event-planning",
+          "meta": [
+            {
+              "icon": "calendar",
+              "label": "Posted On",
+              "value": "3 weeks ago"
+            },
+            {
+              "icon": "user",
+              "label": "Seniority",
+              "value": "Internship"
+            },
+            {
+              "icon": "users",
+              "label": "Department",
+              "value": "Internship"
+            },
+            {
+              "icon": "clock",
+              "label": "Employment Type",
+              "value": "Internship"
+            }
+          ],
+          "workModel": "On-site",
+          "salary": "₹ 15,000 - ₹ 25,000 / month",
+          "about": {
+            "title": "About the Role",
+            "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+          },
+          "responsibilities": {
+            "title": "What You'll Do",
+            "items": [
+              "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+              "Coordinate with clients to understand requirements and deliver customized solutions.",
+              "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+              "Oversee event logistics, on-site management and post-event analysis.",
+              "Ensure high levels of client satisfaction and build long-term relationships."
+            ]
+          },
+          "skills": {
+            "title": "Skills & Experience",
+            "items": [
+              "3+ years of experience in event management or a related field.",
+              "Strong project management, organizational and multitasking skills.",
+              "Excellent communication and stakeholder management abilities.",
+              "Creative mindset with problem-solving approach.",
+              "Proficient in MS Office and event management tools.",
+              "Willingness to travel and work flexible hours."
+            ]
+          },
+          "benefits": {
+            "title": "Benefits & Perks",
+            "items": [
+              {
+                "icon": "currency",
+                "label": "Competitive Salary"
+              },
+              {
+                "icon": "trending-up",
+                "label": "Performance Bonus"
+              },
+              {
+                "icon": "shield",
+                "label": "Health Insurance"
+              },
+              {
+                "icon": "clock",
+                "label": "Flexible Work Hours"
+              },
+              {
+                "icon": "book-open",
+                "label": "Learning & Development"
+              },
+              {
+                "icon": "plane",
+                "label": "Travel Opportunities"
+              },
+              {
+                "icon": "users",
+                "label": "Team Outings"
+              },
+              {
+                "icon": "heart",
+                "label": "Wellness Programs"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "sidebar": {
+      "joinTeam": {
+        "title": "Join Our Team",
+        "description": "Be part of a team that turns ideas into unforgettable experiences.",
+        "buttonText": "View Open Positions"
+      },
+      "benefits": {
+        "title": "Why Join Occasia?",
+        "items": [
+          {
+            "icon": "star",
+            "text": "Work on exciting & diverse events"
+          },
+          {
+            "icon": "users",
+            "text": "Creative & collaborative culture"
+          },
+          {
+            "icon": "trending-up",
+            "text": "Opportunities to grow & learn"
+          },
+          {
+            "icon": "gift",
+            "text": "Competitive salary & benefits"
+          },
+          {
+            "icon": "heart",
+            "text": "Make memories that last a lifetime"
+          }
+        ]
+      },
+      "culture": {
+        "title": "Our Culture",
+        "description": "Passion, creativity and teamwork are at the heart of everything we do.",
+        "linkText": "Life at Occasia",
+        "image": "/Event/sunset_beach_wedding.jpg"
+      }
+    }
+  },
+  "careerDetailPage": {
+    "banner": {
+      "title": "Career Detail",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Career",
+          "href": "/career"
+        },
+        {
+          "label": "Career Detail",
+          "href": "/career-detail"
+        }
+      ]
+    },
+    "job": {
+      "header": {
+        "badge": "EVENTS TEAM",
+        "title": "Event Manager",
+        "location": "Mumbai, Maharashtra",
+        "type": "Full Time",
+        "workModel": "Hybrid",
+        "salary": "₹ 60,000 - ₹ 90,000 / month"
+      },
+      "meta": [
+        {
+          "icon": "calendar",
+          "label": "Posted On",
+          "value": "10 May 2025"
+        },
+        {
+          "icon": "user",
+          "label": "Seniority",
+          "value": "Mid-level"
+        },
+        {
+          "icon": "users",
+          "label": "Department",
+          "value": "Events"
+        },
+        {
+          "icon": "clock",
+          "label": "Employment Type",
+          "value": "Full Time"
+        }
+      ],
+      "about": {
+        "title": "About the Role",
+        "content": "We are looking for a passionate and detail-oriented Event Manager to plan, execute, and deliver memorable events that exceed expectations. You will manage end-to-end event operations, coordinate with vendors and clients, and ensure seamless execution from concept to completion."
+      },
+      "responsibilities": {
+        "title": "What You'll Do",
+        "items": [
+          "Plan, organize and manage a wide range of events including corporate, social and brand activations.",
+          "Coordinate with clients to understand requirements and deliver customized solutions.",
+          "Manage budgets, timelines, vendors and resources to ensure smooth execution.",
+          "Oversee event logistics, on-site management and post-event analysis.",
+          "Ensure high levels of client satisfaction and build long-term relationships."
+        ]
+      },
+      "skills": {
+        "title": "Skills & Experience",
+        "items": [
+          "3+ years of experience in event management or a related field.",
+          "Strong project management, organizational and multitasking skills.",
+          "Excellent communication and stakeholder management abilities.",
+          "Creative mindset with problem-solving approach.",
+          "Proficient in MS Office and event management tools.",
+          "Willingness to travel and work flexible hours."
+        ]
+      },
+      "benefits": {
+        "title": "Benefits & Perks",
+        "items": [
+          {
+            "icon": "currency",
+            "label": "Competitive Salary"
+          },
+          {
+            "icon": "trending-up",
+            "label": "Performance Bonus"
+          },
+          {
+            "icon": "shield",
+            "label": "Health Insurance"
+          },
+          {
+            "icon": "clock",
+            "label": "Flexible Work Hours"
+          },
+          {
+            "icon": "book-open",
+            "label": "Learning & Development"
+          },
+          {
+            "icon": "plane",
+            "label": "Travel Opportunities"
+          },
+          {
+            "icon": "users",
+            "label": "Team Outings"
+          },
+          {
+            "icon": "heart",
+            "label": "Wellness Programs"
+          }
+        ]
+      },
+      "apply": {
+        "title": "How to Apply",
+        "content": "If you're excited about creating extraordinary experiences and want to be part of our vibrant team, we'd love to hear from you!",
+        "buttonText": "Submit Application",
+        "privacyNote": "Your application is secure and will only be shared with our hiring team."
+      }
+    },
+    "sidebar": {
+      "applicationForm": {
+        "title": "Apply for this Job",
+        "fields": {
+          "name": "Full Name *",
+          "email": "Email Address *",
+          "phone": "Phone Number *",
+          "resume": "Upload Resume *",
+          "coverLetter": "Cover Letter (Optional)"
+        },
+        "placeholders": {
+          "name": "Enter your full name",
+          "email": "Enter your email",
+          "phone": "Enter your phone number",
+          "coverLetter": "Tell us why you're a great fit..."
+        },
+        "dragDropText": "Click to upload or drag and drop",
+        "dragDropFormat": "PDF, DOC, DOCX (Max. 5MB)",
+        "buttonText": "Apply Now",
+        "privacyText": "We respect your privacy and keep your information secure."
+      },
+      "jobSnapshot": {
+        "title": "Job Snapshot",
+        "items": [
+          {
+            "label": "Job ID",
+            "value": "EVT12567",
+            "icon": "hash"
+          },
+          {
+            "label": "Location",
+            "value": "Mumbai, Maharashtra",
+            "icon": "map-pin"
+          },
+          {
+            "label": "Department",
+            "value": "Events",
+            "icon": "users"
+          },
+          {
+            "label": "Experience",
+            "value": "3+ Years",
+            "icon": "briefcase"
+          },
+          {
+            "label": "Employment Type",
+            "value": "Full Time",
+            "icon": "clock"
+          },
+          {
+            "label": "Salary",
+            "value": "₹ 60,000 – ₹ 90,000 / month",
+            "icon": "currency"
+          }
+        ]
+      },
+      "officeLocation": {
+        "title": "Office Location",
+        "mapImage": "/map.jpg"
+      },
+      "whyJoin": {
+        "title": "Why Join Occasia?",
+        "items": [
+          "Work on exciting events & experiences",
+          "Creative & collaborative culture",
+          "Grow your career with learning opportunities",
+          "Competitive salary & benefits",
+          "Make memories that last a lifetime"
+        ],
+        "linkText": "Life at Occasia"
+      }
+    }
+  },
+  "privacyPolicyPage": {
+    "banner": {
+      "title": "Privacy Policy",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Privacy Policy", "href": "/privacy-policy" }
+      ]
+    },
+    "intro": {
+      "badge": "PRIVACY POLICY",
+      "titleStart": "Stories From Our Happy",
+      "titleHighlight": "Clients & Celebrations!"
+    },
+    "policies": [
+      {
+        "id": "01",
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly to us, such as your name, email address, phone number, and event details when you contact us or fill out a form."
+      },
+      {
+        "id": "02",
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, respond to your inquiries, send you updates, and personalize your experience."
+      },
+      {
+        "id": "03",
+        "title": "Information Sharing",
+        "content": "We do not sell or rent your personal information. We may share your information with trusted partners only to deliver our services or when required by law."
+      },
+      {
+        "id": "04",
+        "title": "Data Security",
+        "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction."
+      },
+      {
+        "id": "05",
+        "title": "Cookies",
+        "content": "We use cookies and similar technologies to enhance your browsing experience, analyze site traffic, and personalize content."
+      },
+      {
+        "id": "06",
+        "title": "Your Rights",
+        "content": "You have the right to access, update, or delete your personal information. You can contact us anytime to exercise these rights."
+      },
+      {
+        "id": "07",
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated effective date."
+      }
+    ]
+  },
+  "getQuotePage": {
+    "banner": {
+      "title": "Get A Quote",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Get A Quote", "href": "/get-a-quote" }
+      ]
+    },
+    "intro": {
+      "badge": "GET A QUOTE",
+      "titleStart": "Let's Plan Your ",
+      "titleHighlight": "Perfect Event"
+    },
+    "form": {
+      "title": "EVENT DETAILS",
+      "fields": {
+        "name": "Full Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number *",
+        "eventType": "Event Type *",
+        "eventDate": "Event Date *",
+        "guests": "Expected Guests",
+        "location": "Event Location *",
+        "details": "Tell us about your event *",
+        "budget": "Budget Range (Optional)"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "Your email address",
+        "phone": "Your phone number",
+        "eventType": "Select event type",
+        "eventDate": "Select date",
+        "guests": "Approx. number of guests",
+        "location": "Enter event location",
+        "details": "Share your ideas, preferences, theme, services you need and any special requests...",
+        "budget": "Select your budget range"
+      },
+      "eventTypeOptions": [
+        "Corporate Event",
+        "Wedding",
+        "Birthday Party",
+        "Social Gathering",
+        "Other"
+      ],
+      "budgetOptions": [
+        "Under $5,000",
+        "$5,000 - $10,000",
+        "$10,000 - $25,000",
+        "$25,000 - $50,000",
+        "Over $50,000"
+      ],
+      "agreementText": "I agree to the ",
+      "privacyLink": "Privacy Policy",
+      "termsLink": "Terms & Conditions.",
+      "submitButton": "Submit Request",
+      "footerText": "Our team will get back to you within 24 hours."
+    },
+    "sidebar": {
+      "title": "WHY CHOOSE OCCASIA?",
+      "items": [
+        {
+          "icon": "award",
+          "title": "Experience",
+          "description": "10+ years of creating unforgettable events."
+        },
+        {
+          "icon": "users",
+          "title": "Expert Team",
+          "description": "Passionate professionals dedicated to perfection."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Creative Ideas",
+          "description": "Unique concepts tailored to your vision."
+        },
+        {
+          "icon": "shield-check",
+          "title": "End-to-End Support",
+          "description": "From planning to execution, we handle it all."
+        },
+        {
+          "icon": "thumbs-up",
+          "title": "Client Satisfaction",
+          "description": "Trusted by 500+ happy clients."
+        }
+      ]
+    }
+  },
+  "sitemapPage": {
+    "banner": {
+      "title": "Sitemap",
+      "image": "/PageBanner.svg",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Sitemap", "href": "/sitemap" }
+      ]
+    },
+    "sections": [
+      {
+        "id": "01",
+        "title": "Home",
+        "icon": "home",
+        "links": [
+          { "label": "Homepage", "href": "/" }
+        ]
+      },
+      {
+        "id": "02",
+        "title": "About Us",
+        "icon": "users",
+        "links": [
+          { "label": "Our Story", "href": "/our-story" },
+          { "label": "Our Mission", "href": "/mission" },
+          { "label": "Our Team", "href": "/our-team" },
+          { "label": "Why Occaisa", "href": "/why-choose-us" }
+        ]
+      },
+      {
+        "id": "03",
+        "title": "Events",
+        "icon": "calendar",
+        "links": [
+          { "label": "All Events", "href": "/events" },
+          { "label": "Event Categories", "href": "/events" },
+          { "label": "Event Details", "href": "/events" },
+          { "label": "Become a Partner", "href": "/our-partners" }
+        ]
+      },
+      {
+        "id": "04",
+        "title": "Careers",
+        "icon": "briefcase",
+        "links": [
+          { "label": "Current Openings", "href": "/career" },
+          { "label": "Job Details", "href": "/career" },
+          { "label": "Life at Occaisa", "href": "/career" },
+          { "label": "How to Apply", "href": "/career" }
+        ]
+      },
+      {
+        "id": "05",
+        "title": "Blog",
+        "icon": "file-text",
+        "links": [
+          { "label": "All Posts", "href": "/blog" },
+          { "label": "Categories", "href": "/blog" },
+          { "label": "Blog Details", "href": "/blog" }
+        ]
+      },
+      {
+        "id": "06",
+        "title": "Contact Us",
+        "icon": "mail",
+        "links": [
+          { "label": "Get in Touch", "href": "/contact" },
+          { "label": "FAQs", "href": "/faq" },
+          { "label": "Locations", "href": "/contact" }
+        ]
+      },
+      {
+        "id": "07",
+        "title": "Account",
+        "icon": "user",
+        "links": [
+          { "label": "Login / Register", "href": "#" },
+          { "label": "My Profile", "href": "#" },
+          { "label": "My Applications", "href": "#" },
+          { "label": "Saved Jobs / Events", "href": "#" }
+        ]
+      },
+      {
+        "id": "08",
+        "title": "Legal",
+        "icon": "shield",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy-policy" },
+          { "label": "Terms & Conditions", "href": "#" },
+          { "label": "Refund Policy", "href": "#" }
+        ]
+      }
+    ]
   }
 }

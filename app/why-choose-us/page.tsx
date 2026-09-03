@@ -1,5 +1,5 @@
 import PageBanner from "@/app/components/PageBanner";
-import WhyChooseUs from "@/app/components/WhyChooseUs";
+import WhyChooseUs from "@/app/why-choose-us/WhyChooseUs";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

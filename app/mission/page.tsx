@@ -1,8 +1,8 @@
 import Footer from "@/app/components/Footer";
 import PageBanner from "@/app/components/PageBanner";
-import MissionPurpose from "@/app/components/MissionPurpose";
-import MissionValues from "@/app/components/MissionValues";
-import MissionCommitment from "@/app/components/MissionCommitment";
+import MissionPurpose from "@/app/mission/MissionPurpose";
+import MissionValues from "@/app/mission/MissionValues";
+import MissionCommitment from "@/app/mission/MissionCommitment";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

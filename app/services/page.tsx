@@ -1,5 +1,5 @@
 import PageBanner from "@/app/components/PageBanner";
-import ServicesGrid from "../components/ServicesGrid";
+import ServicesGrid from "./ServicesGrid";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

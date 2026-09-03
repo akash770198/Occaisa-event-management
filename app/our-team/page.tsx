@@ -1,5 +1,5 @@
 import PageBanner from "@/app/components/PageBanner";
-import TeamGrid from "@/app/components/TeamGrid";
+import TeamGrid from "@/app/our-team/TeamGrid";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

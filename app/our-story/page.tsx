@@ -1,8 +1,8 @@
 import PageBanner from "@/app/components/PageBanner";
-import StoryPurpose from "@/app/components/StoryPurpose";
-import StoryJourney from "@/app/components/StoryJourney";
-import StoryValuesBar from "@/app/components/StoryValuesBar";
-import StoryPhilosophy from "@/app/components/StoryPhilosophy";
+import StoryPurpose from "@/app/our-story/StoryPurpose";
+import StoryJourney from "@/app/our-story/StoryJourney";
+import StoryValuesBar from "@/app/our-story/StoryValuesBar";
+import StoryPhilosophy from "@/app/our-story/StoryPhilosophy";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

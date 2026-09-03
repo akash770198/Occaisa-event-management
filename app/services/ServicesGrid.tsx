@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "../../data/content.json";
 import { motion } from "framer-motion";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "@/app/components/ServiceCard";
 import { ArrowRight } from "lucide-react";
 
 export default function ServicesGrid() {

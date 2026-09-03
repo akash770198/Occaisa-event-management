@@ -1,7 +1,7 @@
 import PageBanner from "@/app/components/PageBanner";
-import VisionPurpose from "@/app/components/VisionPurpose";
-import VisionValues from "@/app/components/VisionValues";
-import VisionCommitment from "@/app/components/VisionCommitment";
+import VisionPurpose from "@/app/vision/VisionPurpose";
+import VisionValues from "@/app/vision/VisionValues";
+import VisionCommitment from "@/app/vision/VisionCommitment";
 import data from "@/data/content.json";
 import { Metadata } from "next";
 

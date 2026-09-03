@@ -15,6 +15,10 @@ export default function GalleryClient() {
   const [lightboxItems, setLightboxItems] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Pagination State
+  const [visibleImages, setVisibleImages] = useState(9);
+  const [visibleVideos, setVisibleVideos] = useState(9);
+
   const openLightbox = (items: any[], index: number) => {
     setLightboxItems(items);
     setCurrentIndex(index);
@@ -67,7 +71,7 @@ export default function GalleryClient() {
 
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {photoGallery.images.map((img: any, idx: number) => (
+            {photoGallery.images.slice(0, visibleImages).map((img: any, idx: number) => (
               <div 
                 key={idx} 
                 className="relative h-64 md:h-72 w-full rounded-2xl overflow-hidden group shadow-sm border border-gray-100 cursor-pointer"
@@ -83,6 +87,19 @@ export default function GalleryClient() {
               </div>
             ))}
           </div>
+
+          {/* View More Button for Images */}
+          {visibleImages < photoGallery.images.length && (
+            <div className="flex justify-center mt-12">
+              <button 
+                onClick={() => setVisibleImages(prev => prev + 9)}
+                className="flex items-center gap-3 border-[1.5px] border-[#6C2BD9] text-[#6C2BD9] hover:bg-[#6C2BD9] hover:text-white transition-all duration-300 px-8 py-3.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md"
+              >
+                {photoGallery.buttonText || "View More"}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
 
         </div>
       </section>
@@ -112,8 +129,8 @@ export default function GalleryClient() {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-14">
-            {videoGallery.videos.map((vid: any, idx: number) => (
+          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ${visibleVideos < videoGallery.videos.length ? 'mb-14' : ''}`}>
+            {videoGallery.videos.slice(0, visibleVideos).map((vid: any, idx: number) => (
               <div 
                 key={idx} 
                 className="relative h-64 md:h-72 w-full rounded-2xl overflow-hidden group shadow-sm border border-gray-100 cursor-pointer"
@@ -136,12 +153,17 @@ export default function GalleryClient() {
           </div>
 
           {/* View More Button */}
-          <div className="flex justify-center">
-            <button className="flex items-center gap-3 border-[1.5px] border-[#6C2BD9] text-[#6C2BD9] hover:bg-[#6C2BD9] hover:text-white transition-all duration-300 px-8 py-3.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md">
-              {videoGallery.buttonText}
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
+          {visibleVideos < videoGallery.videos.length && (
+            <div className="flex justify-center">
+              <button 
+                onClick={() => setVisibleVideos(prev => prev + 9)}
+                className="flex items-center gap-3 border-[1.5px] border-[#6C2BD9] text-[#6C2BD9] hover:bg-[#6C2BD9] hover:text-white transition-all duration-300 px-8 py-3.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md"
+              >
+                {videoGallery.buttonText}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
 
         </div>
       </section>
