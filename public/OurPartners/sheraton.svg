@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+    <defs>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Great+Vibes&amp;family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Dancing+Script:wght@700&amp;family=Alex+Brush&amp;family=Fredoka+One&amp;display=swap');
+        text { dominant-baseline: middle; text-anchor: middle; }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .great-vibes { font-family: 'Great Vibes', cursive; }
+        .dancing { font-family: 'Dancing Script', cursive; }
+        .alex-brush { font-family: 'Alex Brush', cursive; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+      </style>
+    </defs>
+    
+    <g fill="#333">
+      <path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(0, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(0, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(25, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-25, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(50, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-50, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(75, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-75, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(100, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-100, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(125, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-125, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(150, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-150, 200, 100) translate(60,0)"/><path d="M140 100 Q130 90 140 80 Q150 90 140 100 Z" fill="#333" transform="rotate(175, 200, 100) translate(-60,0)"/><path d="M260 100 Q250 90 260 80 Q270 90 260 100 Z" fill="#333" transform="rotate(-175, 200, 100) translate(60,0)"/>
+      <!-- Wreath rings -->
+      <circle cx="200" cy="100" r="50" fill="none" stroke="#333" stroke-width="2"/>
+      <path d="M165,100 A35,35 0 0,1 235,100" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="200" y="115" class="cinzel" font-size="64" font-weight="700">S</text>
+      <text x="200" y="195" class="montserrat" font-size="24" font-weight="700" letter-spacing="5">SHERATON</text>
+      <text x="200" y="220" class="montserrat" font-size="12" font-weight="700" letter-spacing="3">EST. 1937</text>
+    </g>
+  
+  </svg>

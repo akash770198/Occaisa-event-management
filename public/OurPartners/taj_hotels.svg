@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+    <defs>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Great+Vibes&amp;family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Dancing+Script:wght@700&amp;family=Alex+Brush&amp;family=Fredoka+One&amp;display=swap');
+        text { dominant-baseline: middle; text-anchor: middle; }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .great-vibes { font-family: 'Great Vibes', cursive; }
+        .dancing { font-family: 'Dancing Script', cursive; }
+        .alex-brush { font-family: 'Alex Brush', cursive; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+      </style>
+    </defs>
+    
+    <g fill="#b9935a">
+      <circle cx="200" cy="50" r="6" fill="#b9935a" />
+      <line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(0, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(30, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(60, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(90, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(120, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(150, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(180, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(210, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(240, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(270, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(300, 200, 50)" /><line x1="200" y1="50" x2="200" y2="35" stroke="#b9935a" stroke-width="2" transform="rotate(330, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(15, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(45, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(75, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(105, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(135, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(165, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(195, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(225, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(255, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(285, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(315, 200, 50)" /><circle cx="200" cy="40" r="1.5" fill="#b9935a" transform="rotate(345, 200, 50)" />
+      <text x="200" y="110" class="cinzel" font-size="54" font-weight="700" letter-spacing="4">TAJ</text>
+      <text x="200" y="150" class="montserrat" font-size="14" letter-spacing="4">HOTELS</text>
+      <text x="200" y="170" class="montserrat" font-size="14" letter-spacing="4">RESORTS</text>
+      <text x="200" y="190" class="montserrat" font-size="14" letter-spacing="4">AND PALACES</text>
+    </g>
+  
+  </svg>
