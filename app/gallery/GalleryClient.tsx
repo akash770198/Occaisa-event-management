@@ -133,7 +133,7 @@ export default function GalleryClient() {
             {videoGallery.videos.slice(0, visibleVideos).map((vid: any, idx: number) => (
               <div 
                 key={idx} 
-                className="relative h-64 md:h-72 w-full rounded-2xl overflow-hidden group shadow-sm border border-gray-100 cursor-pointer"
+                className={`relative h-64 md:h-72 w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100 cursor-pointer ${vid.thumbnail?.endsWith(".mp4") || vid.videoUrl?.endsWith(".mp4") ? '' : 'group'}`}
                 onClick={() => openLightbox(videoGallery.videos, idx)}
               >
                 {vid.thumbnail?.endsWith(".mp4") || vid.videoUrl?.endsWith(".mp4") ? (
@@ -142,7 +142,7 @@ export default function GalleryClient() {
                     muted 
                     loop 
                     playsInline 
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out pointer-events-none" 
+                    className="object-cover w-full h-full pointer-events-none" 
                   />
                 ) : (
                   <Image 
