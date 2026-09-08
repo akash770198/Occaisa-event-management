@@ -39,8 +39,8 @@ export default function About({ data, className, showButton }: AboutProps = {}) 
             </svg>
 
             {/* Dotted pattern bottom right */}
-            <div className="absolute -bottom-10 -right-4 w-40 flex flex-wrap gap-3 opacity-40 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+            <div className="absolute -bottom-20 -right-2 w-40 flex flex-wrap gap-3 opacity-40 z-0">
+              {Array.from({ length: 36 }).map((_, i) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#7b2cbf] rounded-full"></div>
               ))}
             </div>

@@ -51,8 +51,8 @@ export default function MissionPurpose({ data, className }: SectionProps<EventsM
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Dotted pattern bottom right */}
-            <div className="absolute -bottom-8 -right-4 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_: any, i: number) => (
+            <div className="absolute -bottom-20 -right-2 w-40 flex flex-wrap gap-3 opacity-30 z-0">
+              {Array.from({ length: 36 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#5a42f5] rounded-full"></div>
               ))}
             </div>

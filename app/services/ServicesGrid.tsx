@@ -16,14 +16,13 @@ export default function ServicesGrid({ data, className }: SectionProps<EventsSer
         
         {/* Header Section */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-[2px] bg-[#6C2BD9] opacity-50"></div>
-            <span className="text-[#6C2BD9] text-sm">✦</span>
-            <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider px-2">
-              {services.badge}
-            </span>
-            <span className="text-[#6C2BD9] text-sm">✦</span>
-            <div className="w-12 h-[2px] bg-[#6C2BD9] opacity-50"></div>
+          <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-widest mb-3">
+            {services.badge}
+          </span>
+          <div className="flex items-center justify-center gap-0 w-48 mb-6">
+            <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+            <div className="w-2.5 h-2.5 bg-[#6C2BD9] rotate-45 mx-3"></div>
+            <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b132b] tracking-tight">
             {services.titleStart}

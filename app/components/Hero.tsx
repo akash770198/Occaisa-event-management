@@ -100,7 +100,7 @@ export default function Hero({ data, className }: SectionProps<EventsHeroData> =
 
         {/* Content Box */}
         <motion.div
-          className="max-w-[750px] relative w-full flex flex-col justify-center ml-0 md:ml-12 lg:ml-16 z-10 max-md:px-6"
+          className="max-w-[750px] relative w-full flex flex-col justify-center ml-0 md:ml-12 lg:ml-16 -mt-32 z-10 max-md:px-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
