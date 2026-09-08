@@ -96,7 +96,7 @@ export default function Header({ data, className }: SectionProps<any> = {}) {
           </button>
 
           {/* Desktop Nav - shifted a bit right via pl-8 */}
-          <nav className="hidden lg:flex flex-1 justify-center items-center gap-6 xl:gap-8 font-semibold text-[#0b132b] pl-8">
+          <nav className="hidden lg:flex flex-1 justify-center items-center gap-5 xl:gap-7 font-semibold text-[#0b132b] pl-8">
             {header.nav.map((item: any, index: number) => (
               <div key={index} className="relative group h-full flex items-center">
                 <Link
