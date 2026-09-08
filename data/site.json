@@ -3110,6 +3110,11 @@
                   "thumbnail": "/videos/gallery_vd5.mp4",
                   "alt": "Night Party",
                   "videoUrl": "#"
+                },
+                {
+                  "thumbnail": "/videos/gallery_vd1.mp4",
+                  "alt": "Tech Event",
+                  "videoUrl": "#"
                 }
               ]
             }

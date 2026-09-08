@@ -1,10 +1,116 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import { Play, ArrowRight, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { site, SectionProps, EventsGalleryPageData } from "@/data";
+
+interface VideoCardProps {
+  vid: {
+    thumbnail?: string;
+    videoUrl?: string;
+    alt?: string;
+  };
+  onClick: () => void;
+}
+
+function VideoCard({ vid, onClick }: VideoCardProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const isVideo = vid.thumbnail?.endsWith(".mp4") || vid.videoUrl?.endsWith(".mp4");
+  const videoSrc = vid.thumbnail?.endsWith(".mp4") ? vid.thumbnail : vid.videoUrl;
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Play request interrupted by pause or blocked by browser
+        });
+      }
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
+  return (
+    <div
+      className="group relative h-64 md:h-72 w-full rounded-2xl overflow-hidden cursor-pointer bg-slate-900 border border-gray-100 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#6C2BD9]/25 hover:border-[#6C2BD9]/40 hover:ring-2 hover:ring-[#6C2BD9]/30"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={onClick}
+    >
+      {isVideo ? (
+        <video
+          ref={videoRef}
+          src={videoSrc}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="object-cover w-full h-full pointer-events-none transition-transform duration-700 ease-out group-hover:scale-105"
+        />
+      ) : (
+        vid.thumbnail && (
+          <Image
+            src={vid.thumbnail}
+            alt={vid.alt || "Video thumbnail"}
+            fill
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        )
+      )}
+
+      {/* Dynamic Overlay */}
+      <div
+        className={`absolute inset-0 transition-colors duration-500 pointer-events-none ${
+          isHovered ? "bg-black/15" : "bg-black/35"
+        }`}
+      />
+
+      {/* Center Play Button Overlay - Fades and scales smoothly on hover when preview starts */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div
+          className={`w-16 h-16 rounded-full border-[1.5px] border-white/90 bg-white/15 backdrop-blur-sm flex items-center justify-center text-white transition-all duration-300 ease-out shadow-lg ${
+            isHovered
+              ? "opacity-0 scale-75"
+              : "opacity-100 scale-100 group-hover:scale-110 group-hover:bg-white/25"
+          }`}
+        >
+          <Play className="w-6 h-6 text-white ml-1" fill="currentColor" />
+        </div>
+      </div>
+
+      {/* Video Details & Status Badge at bottom */}
+      {vid.alt && (
+        <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 via-black/45 to-transparent flex items-center justify-between text-white pointer-events-none transition-opacity duration-300">
+          <span className="font-semibold text-sm md:text-base drop-shadow-sm truncate pr-2">
+            {vid.alt}
+          </span>
+          <span
+            className={`text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-white/20 shadow-sm shrink-0 transition-all duration-300 ${
+              isHovered
+                ? "bg-[#6C2BD9] text-white shadow-[#6C2BD9]/50"
+                : "bg-black/40 backdrop-blur-sm text-gray-200"
+            }`}
+          >
+            {isHovered ? "Playing" : "Video"}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function GalleryClient({ data, className }: SectionProps<EventsGalleryPageData> = {}) {
   const galleryPage = data || site.galleryPage;
@@ -131,34 +237,11 @@ export default function GalleryClient({ data, className }: SectionProps<EventsGa
           {/* Grid */}
           <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ${visibleVideos < videoGallery.videos.length ? 'mb-14' : ''}`}>
             {videoGallery.videos.slice(0, visibleVideos).map((vid: any, idx: number) => (
-              <div 
-                key={idx} 
-                className={`relative h-64 md:h-72 w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100 cursor-pointer ${vid.thumbnail?.endsWith(".mp4") || vid.videoUrl?.endsWith(".mp4") ? '' : 'group'}`}
+              <VideoCard
+                key={idx}
+                vid={vid}
                 onClick={() => openLightbox(videoGallery.videos, idx)}
-              >
-                {vid.thumbnail?.endsWith(".mp4") || vid.videoUrl?.endsWith(".mp4") ? (
-                  <video 
-                    src={vid.thumbnail || vid.videoUrl} 
-                    muted 
-                    loop 
-                    playsInline 
-                    className="object-cover w-full h-full pointer-events-none" 
-                  />
-                ) : (
-                  <Image 
-                    src={vid.thumbnail} 
-                    alt={vid.alt} 
-                    fill 
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" 
-                  />
-                )}
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full border-[1.5px] border-white flex items-center justify-center group-hover:scale-110 group-hover:bg-white/10 transition-all duration-300">
-                    <Play className="w-6 h-6 text-white ml-1" fill="currentColor" />
-                  </div>
-                </div>
-              </div>
+              />
             ))}
           </div>
 
