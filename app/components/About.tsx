@@ -5,8 +5,13 @@ import Link from "next/link";
 import { site, EventsAboutData, SectionProps } from "@/data";
 import { motion } from "framer-motion";
 
-export default function About({ data, className }: SectionProps<EventsAboutData> = {}) {
+export interface AboutProps extends SectionProps<EventsAboutData> {
+  showButton?: boolean;
+}
+
+export default function About({ data, className, showButton }: AboutProps = {}) {
   const about = data || site.about;
+  const isButtonVisible = showButton !== undefined ? showButton : (about.showButton ?? Boolean(about.buttonText));
 
   return (
     <section className="w-full py-24 bg-white overflow-hidden">
@@ -104,14 +109,19 @@ export default function About({ data, className }: SectionProps<EventsAboutData>
             </p>
 
             {/* Button */}
-            <div>
-              <Link href={about.buttonLink || "/about-us"} className="bg-[#0b132b] hover:bg-[#1c3e98] text-white font-semibold py-3 md:py-4 px-8 md:px-10 rounded-sm flex items-center gap-3 transition-colors duration-300 shadow-lg w-max">
-                {about.buttonText}
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+            {isButtonVisible && about.buttonText && (
+              <div>
+                <Link
+                  href={about.buttonLink || "#"}
+                  className="bg-[#0b132b] hover:bg-[#1c3e98] text-white font-semibold py-3 md:py-4 px-8 md:px-10 rounded-sm flex items-center gap-3 transition-colors duration-300 shadow-lg w-max"
+                >
+                  {about.buttonText}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            )}
           </motion.div>
 
         </div>

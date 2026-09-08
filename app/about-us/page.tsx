@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const { banner } = data.aboutPage;
+  const { banner, about } = data.aboutPage;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -22,7 +22,7 @@ export default function AboutPage() {
         image={banner.image}
         breadcrumbs={banner.breadcrumbs}
       />
-      <About />
+      <About showButton={about.showButton} />
       <MissionVision />
       <WhyChooseUs />
     </div>

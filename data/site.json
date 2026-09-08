@@ -334,7 +334,8 @@
             "paragraph1": "As an event management company, we are dedicated to executing your vision flawlessly. From corporate gatherings to grand celebrations, we handle every detail with creativity and care.",
             "paragraph2": "With years of experience in managing diverse events, we ensure a seamless experience for you and your guests. Allow us to take the stress out of event planning so you can enjoy every moment.",
             "buttonText": "Discover More >",
-            "buttonLink": "/about-us"
+            "buttonLink": "/about-us",
+            "showButton": true
           }
         }
       },
@@ -1149,11 +1150,11 @@
               "logo": "/Occasia_logo_white.svg"
             },
             "social": {
-              "facebook": "#",
-              "twitter": "#",
-              "instagram": "#",
-              "linkedin": "#",
-              "youtube": "#"
+              "facebook": "https://www.facebook.com/",
+              "twitter": "https://www.twitter.com/",
+              "instagram": "https://www.instagram.com/",
+              "linkedin": "https://www.linkedin.com/",
+              "youtube": "https://www.youtube.com/"
             },
             "columns": [
               {
@@ -1288,23 +1289,23 @@
               "links": [
                 {
                   "label": "Privacy Policy",
-                  "href": "#"
+                  "href": "/privacy-policy"
                 },
                 {
                   "label": "Cookie Policy",
-                  "href": "#"
+                  "href": "/privacy-policy"
                 },
                 {
                   "label": "Refund / Cancellation Policy",
-                  "href": "#"
+                  "href": "/privacy-policy"
                 },
                 {
                   "label": "Terms & Conditions",
-                  "href": "#"
+                  "href": "/privacy-policy"
                 },
                 {
                   "label": "Disclaimer",
-                  "href": "#"
+                  "href": "/privacy-policy"
                 }
               ]
             }
@@ -1327,6 +1328,9 @@
                   "href": "/about"
                 }
               ]
+            },
+            "about": {
+              "showButton": false
             },
             "missionVision": {
               "badge": "OUR MISSION & VISION",
