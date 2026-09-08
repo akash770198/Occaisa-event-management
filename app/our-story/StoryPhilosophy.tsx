@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsStoryPageData } from "@/data";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
-export default function StoryPhilosophy() {
-  const { philosophy } = data.storyPage;
+export default function StoryPhilosophy({ data, className }: SectionProps<EventsStoryPageData> = {}) {
+  const { philosophy } = (data || site.storyPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden">
@@ -23,7 +23,7 @@ export default function StoryPhilosophy() {
           >
             {/* Dotted pattern top left */}
             <div className="absolute -top-8 -left-8 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#a45cf6] rounded-full"></div>
               ))}
             </div>

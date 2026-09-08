@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsMissionPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function MissionPurpose() {
-  const { purpose } = data.missionPage;
+export default function MissionPurpose({ data, className }: SectionProps<EventsMissionPageData> = {}) {
+  const { purpose } = (data || site.missionPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden" id="purpose">
@@ -52,7 +52,7 @@ export default function MissionPurpose() {
           >
             {/* Dotted pattern bottom right */}
             <div className="absolute -bottom-8 -right-4 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#5a42f5] rounded-full"></div>
               ))}
             </div>

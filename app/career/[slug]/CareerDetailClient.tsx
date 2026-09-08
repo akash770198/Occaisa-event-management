@@ -3,7 +3,7 @@
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps } from "@/data";
 import { motion } from "framer-motion";
 import { 
   CalendarDays, User, Users, Clock, MapPin, Briefcase, Hash, 
@@ -12,8 +12,8 @@ import {
   Bookmark, Share2
 } from "lucide-react";
 
-export default function CareerDetailClient({ slug }: { slug: string }) {
-  const { careerDetailPage, careerPage } = data;
+export default function CareerDetailClient({ slug, data, className }: { slug: string } & SectionProps<any>) {
+  const { careerDetailPage, careerPage } = data || site;
   
   const jobData = careerPage.jobsList.jobs.find((j: any) => j.slug === slug);
 
@@ -414,7 +414,7 @@ export default function CareerDetailClient({ slug }: { slug: string }) {
                   {careerDetailPage.sidebar.whyJoin.title}
                 </h3>
                 <ul className="flex flex-col gap-4 mb-6">
-                  {careerDetailPage.sidebar.whyJoin.items.map((item, idx) => (
+                  {careerDetailPage.sidebar.whyJoin.items.map((item: any, idx: number) => (
                     <li key={idx} className="flex gap-3">
                       <div className="w-5 h-5 rounded-full bg-[#fcf8ff] text-[#6C2BD9] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#f0e6ff]">
                         <CheckCircle2 className="w-3 h-3" />

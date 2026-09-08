@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsServicesPageData } from "@/data";
 import { motion } from "framer-motion";
 import ServiceCard from "@/app/components/ServiceCard";
 import { ArrowRight } from "lucide-react";
 
-export default function ServicesGrid() {
-  const { services } = data.servicesPage;
+export default function ServicesGrid({ data, className }: SectionProps<EventsServicesPageData> = {}) {
+  const { services } = (data || site.servicesPage);
 
   return (
     <section className="w-full py-20 lg:py-24 bg-white flex flex-col items-center">
@@ -35,7 +35,7 @@ export default function ServicesGrid() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {data.services.items.map((item: any, index: number) => (
+          {(data || site).services.items.map((item: any, index: number) => (
             <ServiceCard key={index} item={item} index={index} />
           ))}
         </div>

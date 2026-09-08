@@ -4,12 +4,12 @@ import { useState } from "react";
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsFaqPageData } from "@/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, Send, Award, Lightbulb, Shield, ThumbsUp, Headset, PhoneCall } from "lucide-react";
 
-export default function FaqClient() {
-  const { faqPage } = data;
+export default function FaqClient({ data, className }: SectionProps<EventsFaqPageData> = {}) {
+  const faqPage = data || site.faqPage;
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleFaq = (index: number) => {

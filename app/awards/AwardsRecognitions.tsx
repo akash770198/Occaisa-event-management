@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsAwardsPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function AwardsRecognitions() {
-  const { recognitions } = data.awardsPage;
+export default function AwardsRecognitions({ data, className }: SectionProps<EventsAwardsPageData> = {}) {
+  const { recognitions } = (data || site.awardsPage);
 
   return (
     <section className="w-full py-16 bg-white flex flex-col items-center">
@@ -24,7 +24,7 @@ export default function AwardsRecognitions() {
 
         {/* Recognitions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {recognitions.items.map((item, index) => (
+          {recognitions.items.map((item: any, index: number) => (
             <motion.div
               key={index}
               className="group flex flex-col bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100"

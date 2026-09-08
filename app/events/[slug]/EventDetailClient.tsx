@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps } from "@/data";
 import PageBanner from "@/app/components/PageBanner";
 import { 
   Calendar, MapPin, Clock, ArrowRight,
@@ -20,8 +20,8 @@ const iconMap: Record<string, any> = {
   Gift
 };
 
-export default function EventDetailClient({ slug }: { slug: string }) {
-  const { eventsPage } = data;
+export default function EventDetailClient({ slug, data, className }: { slug: string } & SectionProps<any>) {
+  const { eventsPage } = data || site;
   const { banner, upcoming, detailTemplate } = eventsPage;
 
   // Find the event by slug

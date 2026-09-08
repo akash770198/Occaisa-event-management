@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsAboutPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function WhyChooseUs() {
-  const { whyChooseUs } = data.aboutPage;
+export default function WhyChooseUs({ data, className }: SectionProps<EventsAboutPageData> = {}) {
+  const { whyChooseUs } = data || site.aboutPage;
 
   return (
     <section

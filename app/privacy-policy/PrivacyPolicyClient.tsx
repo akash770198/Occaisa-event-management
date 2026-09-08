@@ -1,11 +1,11 @@
 "use client";
 
 import PageBanner from "@/app/components/PageBanner";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsPrivacyPolicyPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function PrivacyPolicyClient() {
-  const { privacyPolicyPage } = data;
+export default function PrivacyPolicyClient({ data, className }: SectionProps<EventsPrivacyPolicyPageData> = {}) {
+  const privacyPolicyPage = data || site.privacyPolicyPage;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fc]">
@@ -70,7 +70,7 @@ export default function PrivacyPolicyClient() {
           <div className="bg-white rounded-3xl shadow-xl shadow-purple-900/5 p-8 md:p-10 border border-gray-100 flex flex-col gap-6 md:gap-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#f9f3ff] to-transparent rounded-bl-full pointer-events-none opacity-50"></div>
             
-            {privacyPolicyPage.policies.map((policy, idx) => (
+            {privacyPolicyPage.policies.map((policy: any, idx: number) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, x: -30 }}

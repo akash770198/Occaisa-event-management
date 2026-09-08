@@ -1,11 +1,11 @@
 "use client";
 
-import { site as data } from "@/data";
+import { site, SectionProps, EventsStoryPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Lightbulb, Users, Trophy, Heart } from "lucide-react";
 
-export default function StoryJourney() {
-  const { journey } = data.storyPage;
+export default function StoryJourney({ data, className }: SectionProps<EventsStoryPageData> = {}) {
+  const { journey } = (data || site.storyPage);
 
   const getIcon = (name: string) => {
     switch (name) {

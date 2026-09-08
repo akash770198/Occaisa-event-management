@@ -4,10 +4,10 @@ import { useState } from "react";
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import { Play, ArrowRight, X, ChevronLeft, ChevronRight } from "lucide-react";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsGalleryPageData } from "@/data";
 
-export default function GalleryClient() {
-  const { galleryPage } = data as any;
+export default function GalleryClient({ data, className }: SectionProps<EventsGalleryPageData> = {}) {
+  const galleryPage = data || site.galleryPage;
   const { banner, photoGallery, videoGallery } = galleryPage;
 
   // Lightbox State
@@ -95,7 +95,7 @@ export default function GalleryClient() {
                 onClick={() => setVisibleImages(prev => prev + 9)}
                 className="flex items-center gap-3 border-[1.5px] border-[#6C2BD9] text-[#6C2BD9] hover:bg-[#6C2BD9] hover:text-white transition-all duration-300 px-8 py-3.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md"
               >
-                {photoGallery.buttonText || "View More"}
+                {(photoGallery as any).buttonText || "View More"}
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

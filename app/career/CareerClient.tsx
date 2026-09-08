@@ -4,12 +4,12 @@ import { useState } from "react";
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsCareerPageData } from "@/data";
 import { motion } from "framer-motion";
 import { CalendarDays, Users, Handshake, Pen, Settings, FileText, User, GraduationCap, ArrowRight, Star, TrendingUp, Gift, Heart, BriefcaseBusiness } from "lucide-react";
 
-export default function CareerClient() {
-  const { careerPage } = data;
+export default function CareerClient({ data, className }: SectionProps<EventsCareerPageData> = {}) {
+  const careerPage = data || site.careerPage;
 
   const getJobIcon = (name: string) => {
     switch (name) {
@@ -165,7 +165,7 @@ export default function CareerClient() {
                     &lt;
                   </button>
                   
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page: any) => (
                     <button 
                       key={page}
                       onClick={() => setCurrentPage(page)}

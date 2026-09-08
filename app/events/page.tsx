@@ -200,7 +200,7 @@ export default function EventsPage() {
                     &lsaquo;
                   </button>
                   
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page: any) => (
                     <button 
                       key={page}
                       onClick={() => setCurrentPage(page)}

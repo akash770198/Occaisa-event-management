@@ -1,13 +1,13 @@
 "use client";
 
 import PageBanner from "@/app/components/PageBanner";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsGetQuotePageData } from "@/data";
 import { motion } from "framer-motion";
 import { Award, Users, Lightbulb, ShieldCheck, ThumbsUp, ArrowRight, Calendar, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
-export default function GetQuoteClient() {
-  const { getQuotePage } = data;
+export default function GetQuoteClient({ data, className }: SectionProps<EventsGetQuotePageData> = {}) {
+  const getQuotePage = data || site.getQuotePage;
 
   // Helper to map string icon names to Lucide components
   const getIcon = (iconName: string, className: string) => {
@@ -108,7 +108,7 @@ export default function GetQuoteClient() {
                     <div className="relative">
                       <select defaultValue="" className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3.5 text-[#0b132b] text-sm focus:outline-none focus:border-[#6C2BD9] focus:ring-1 focus:ring-[#6C2BD9] transition-all appearance-none cursor-pointer">
                         <option value="" disabled>{getQuotePage.form.placeholders.eventType}</option>
-                        {getQuotePage.form.eventTypeOptions.map((opt, i) => (
+                        {getQuotePage.form.eventTypeOptions.map((opt: any, i: number) => (
                           <option key={i} value={opt}>{opt}</option>
                         ))}
                       </select>
@@ -147,7 +147,7 @@ export default function GetQuoteClient() {
                   <div className="relative">
                     <select defaultValue="" className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3.5 text-[#0b132b] text-sm focus:outline-none focus:border-[#6C2BD9] focus:ring-1 focus:ring-[#6C2BD9] transition-all appearance-none cursor-pointer">
                       <option value="" disabled>{getQuotePage.form.placeholders.budget}</option>
-                      {getQuotePage.form.budgetOptions.map((opt, i) => (
+                      {getQuotePage.form.budgetOptions.map((opt: any, i: number) => (
                         <option key={i} value={opt}>{opt}</option>
                       ))}
                     </select>
@@ -194,7 +194,7 @@ export default function GetQuoteClient() {
                 </h3>
                 
                 <div className="flex flex-col gap-8 relative z-10">
-                  {getQuotePage.sidebar.items.map((item, idx) => (
+                  {getQuotePage.sidebar.items.map((item: any, idx: number) => (
                     <div key={idx} className="flex items-start gap-5">
                       <div className="w-12 h-12 rounded-full bg-white text-[#6C2BD9] flex items-center justify-center flex-shrink-0 shadow-sm border border-[#f0e6ff]">
                         {getIcon(item.icon, "w-6 h-6")}

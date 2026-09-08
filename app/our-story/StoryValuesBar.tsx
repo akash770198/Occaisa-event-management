@@ -1,11 +1,11 @@
 "use client";
 
-import { site as data } from "@/data";
+import { site, SectionProps, EventsStoryPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Diamond, Leaf, Heart, Handshake, Users } from "lucide-react";
 
-export default function StoryValuesBar() {
-  const { values } = data.storyPage;
+export default function StoryValuesBar({ data, className }: SectionProps<EventsStoryPageData> = {}) {
+  const { values } = (data || site.storyPage);
 
   const getIcon = (name: string) => {
     switch (name) {

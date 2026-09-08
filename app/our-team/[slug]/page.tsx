@@ -18,7 +18,7 @@ export default function TeamDetailPage({ params }: { params: Promise<{ slug: str
   const { slug } = use(params);
   
   const { teamDetails } = data as any;
-  const teamDetail = teamDetails[slug];
+  const teamDetail = teamDetails[slug as keyof typeof teamDetails];
   
   if (!teamDetail) {
     return <div className="min-h-screen flex items-center justify-center text-2xl font-bold text-[#0b132b]">Team Member Not Found</div>;

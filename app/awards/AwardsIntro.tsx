@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsAwardsPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function AwardsIntro() {
-  const { intro } = data.awardsPage;
+export default function AwardsIntro({ data, className }: SectionProps<EventsAwardsPageData> = {}) {
+  const { intro } = (data || site.awardsPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden">

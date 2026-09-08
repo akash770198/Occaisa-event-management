@@ -1,13 +1,13 @@
 "use client";
 
 import PageBanner from "@/app/components/PageBanner";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsSitemapPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Home, Users, Calendar, Briefcase, FileText, Mail, User, Shield, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function SitemapClient() {
-  const { sitemapPage } = data;
+export default function SitemapClient({ data, className }: SectionProps<EventsSitemapPageData> = {}) {
+  const sitemapPage = data || site.sitemapPage;
 
   // Helper to map string icon names to Lucide components
   const getIcon = (iconName: string, className: string) => {
@@ -42,7 +42,7 @@ export default function SitemapClient() {
         <div className="container mx-auto px-6 md:px-12 lg:px-18 max-w-7xl relative z-10">
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sitemapPage.sections.map((section, idx) => (
+            {sitemapPage.sections.map((section: any, idx: number) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ export default function SitemapClient() {
                 <div className="h-1 w-8 bg-[#6C2BD9] rounded-full mb-6 ml-16"></div>
                 
                 <ul className="flex flex-col gap-4">
-                  {section.links.map((link, linkIdx) => (
+                  {section.links.map((link: any, linkIdx: number) => (
                     <li key={linkIdx}>
                       <Link href={link.href} className="flex items-center gap-3 text-gray-600 hover:text-[#6C2BD9] font-medium transition-colors group">
                         <ChevronRight className="w-4 h-4 text-[#6C2BD9] group-hover:translate-x-1 transition-transform" />

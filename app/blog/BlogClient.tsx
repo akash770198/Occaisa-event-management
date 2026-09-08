@@ -3,11 +3,11 @@
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsBlogPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function BlogClient() {
-  const { blogPage } = data;
+export default function BlogClient({ data, className }: SectionProps<EventsBlogPageData> = {}) {
+  const blogPage = data || site.blogPage;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fc]">

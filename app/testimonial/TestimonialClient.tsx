@@ -2,11 +2,11 @@
 
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsTestimonialData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function TestimonialClient() {
-  const { testimonial: testimonialPage } = data;
+export default function TestimonialClient({ data, className }: SectionProps<EventsTestimonialData> = {}) {
+  const testimonialPage = data || site.testimonial;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fc]">

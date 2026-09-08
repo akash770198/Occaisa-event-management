@@ -1,11 +1,11 @@
 "use client";
 
-import { site as data } from "@/data";
+import { site, SectionProps, EventsMissionPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Lightbulb, Target, Handshake, Heart } from "lucide-react";
 
-export default function MissionValues() {
-  const { values } = data.missionPage;
+export default function MissionValues({ data, className }: SectionProps<EventsMissionPageData> = {}) {
+  const { values } = (data || site.missionPage);
 
   const getIcon = (name: string) => {
     switch (name) {
@@ -50,7 +50,7 @@ export default function MissionValues() {
 
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative">
-            {values.items.map((item, index) => (
+            {values.items.map((item: any, index: number) => (
               <motion.div
                 key={index}
                 className={`flex flex-col items-center text-center px-4 relative group cursor-pointer ${index !== values.items.length - 1 ? 'lg:border-r lg:border-gray-200/60' : ''}`}

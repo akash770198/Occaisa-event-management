@@ -2,11 +2,11 @@
 
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsPartnersPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function PartnersClient() {
-  const { partnersPage } = data;
+export default function PartnersClient({ data, className }: SectionProps<EventsPartnersPageData> = {}) {
+  const partnersPage = data || site.partnersPage;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fc]">

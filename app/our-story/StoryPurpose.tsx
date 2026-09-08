@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsStoryPageData } from "@/data";
 import { motion } from "framer-motion";
 
-export default function StoryPurpose() {
-  const { purpose } = data.storyPage;
+export default function StoryPurpose({ data, className }: SectionProps<EventsStoryPageData> = {}) {
+  const { purpose } = (data || site.storyPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden" id="story-purpose">
@@ -52,7 +52,7 @@ export default function StoryPurpose() {
           >
             {/* Dotted pattern bottom right */}
             <div className="absolute -bottom-8 -right-4 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#a45cf6] rounded-full"></div>
               ))}
             </div>

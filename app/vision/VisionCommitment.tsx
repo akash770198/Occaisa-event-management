@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsVisionPageData } from "@/data";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
-export default function VisionCommitment() {
-  const { commitment } = data.visionPage;
+export default function VisionCommitment({ data, className }: SectionProps<EventsVisionPageData> = {}) {
+  const { commitment } = (data || site.visionPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden">
@@ -23,7 +23,7 @@ export default function VisionCommitment() {
           >
             {/* Dotted pattern top left */}
             <div className="absolute -top-8 -left-8 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#a45cf6] rounded-full"></div>
               ))}
             </div>
@@ -61,7 +61,7 @@ export default function VisionCommitment() {
 
             {/* Feature List */}
             <div className="flex flex-col gap-6">
-              {commitment.features.map((feature, index) => (
+              {commitment.features.map((feature: any, index: number) => (
                 <div key={index} className="flex gap-4 items-center">
                   <div className="shrink-0 text-[#a45cf6] bg-transparent rounded-full border-none p-0">
                     <CheckCircle2 className="w-6 h-6" strokeWidth={2} />

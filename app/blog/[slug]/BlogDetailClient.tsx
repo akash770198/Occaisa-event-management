@@ -3,11 +3,11 @@
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
-import { site as data } from "@/data";
+import { site, SectionProps } from "@/data";
 import { motion } from "framer-motion";
 
-export default function BlogDetailClient({ slug }: { slug: string }) {
-  const { blogPage, blogDetailPage } = data;
+export default function BlogDetailClient({ slug, data, className }: { slug: string } & SectionProps<any>) {
+  const { blogPage, blogDetailPage } = data || site;
   const post = blogDetailPage.post;
 
   return (

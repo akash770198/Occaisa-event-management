@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsMissionPageData } from "@/data";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
-export default function MissionCommitment() {
-  const { commitment } = data.missionPage;
+export default function MissionCommitment({ data, className }: SectionProps<EventsMissionPageData> = {}) {
+  const { commitment } = (data || site.missionPage);
 
   return (
     <section className="w-full py-16 lg:py-24 bg-white overflow-hidden">
@@ -23,7 +23,7 @@ export default function MissionCommitment() {
           >
             {/* Dotted pattern top left */}
             <div className="absolute -top-8 -left-8 w-40 flex flex-wrap gap-3 opacity-30 z-0">
-              {Array.from({ length: 40 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_: any, i: number) => (
                 <div key={i} className="w-1.5 h-1.5 bg-[#ff007f] rounded-full"></div>
               ))}
             </div>
@@ -64,7 +64,7 @@ export default function MissionCommitment() {
 
             {/* Feature List */}
             <div className="flex flex-col gap-8">
-              {commitment.features.map((feature, index) => (
+              {commitment.features.map((feature: any, index: number) => (
                 <div key={index} className="flex gap-5 items-start">
                   <div className="shrink-0 mt-1 text-[#5a42f5] bg-[#fbf9ff] rounded-full p-1 border border-indigo-50">
                     <CheckCircle2 className="w-6 h-6" strokeWidth={2.5} />

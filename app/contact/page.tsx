@@ -189,7 +189,7 @@ export default function ContactPage() {
                 <div className="mt-12 pt-8 border-t border-white/10">
                   <h4 className="text-white font-bold text-base mb-5">{details.social.title}</h4>
                   <div className="flex items-center gap-4">
-                    {[Facebook, Instagram, Linkedin, Youtube].map((SocialIcon, idx) => (
+                    {[Facebook, Instagram, Linkedin, Youtube].map((SocialIcon: any, idx: number) => (
                       <a key={idx} href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#bd00ff] hover:border-[#bd00ff] transition-all duration-300">
                         <SocialIcon className="w-4 h-4" />
                       </a>

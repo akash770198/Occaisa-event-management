@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { site as data } from "@/data";
+import { site, SectionProps, EventsAboutPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Target, Eye } from "lucide-react";
 
-export default function MissionVision() {
-  const { missionVision } = data.aboutPage;
+export default function MissionVision({ data, className }: SectionProps<EventsAboutPageData> = {}) {
+  const { missionVision } = (data || site.aboutPage);
 
   return (
     <section

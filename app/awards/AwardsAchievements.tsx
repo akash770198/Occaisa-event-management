@@ -1,11 +1,11 @@
 "use client";
 
-import { site as data } from "@/data";
+import { site, SectionProps, EventsAwardsPageData } from "@/data";
 import { motion } from "framer-motion";
 import { Trophy, Medal, Users, Calendar } from "lucide-react";
 
-export default function AwardsAchievements() {
-  const { achievements } = data.awardsPage;
+export default function AwardsAchievements({ data, className }: SectionProps<EventsAwardsPageData> = {}) {
+  const { achievements } = (data || site.awardsPage);
 
   const iconMap: Record<string, React.ReactNode> = {
     trophy: <Trophy className="w-10 h-10 text-current" />,
@@ -32,7 +32,7 @@ export default function AwardsAchievements() {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {achievements.stats.map((stat, index) => (
+          {achievements.stats.map((stat: any, index: number) => (
             <motion.div
               key={index}
               className={`flex flex-col items-center text-center p-6 group ${
