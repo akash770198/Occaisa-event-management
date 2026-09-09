@@ -14,7 +14,7 @@ export default function WhyChooseUs({ data, className }: SectionProps<EventsAbou
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-18">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-          
+
           {/* Left Content */}
           <motion.div
             className="w-full lg:flex-1 flex flex-col"
@@ -24,11 +24,11 @@ export default function WhyChooseUs({ data, className }: SectionProps<EventsAbou
             transition={{ duration: 0.8 }}
           >
             {/* Badge & Separator */}
-            <div className="mb-6">
-              <div className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-3">
+            <div className="self-start w-fit flex flex-col items-center mb-6">
+              <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-3">
                 {whyChooseUs.badge}
-              </div>
-              <div className="flex items-center gap-0 w-48">
+              </span>
+              <div className="flex items-center gap-0 w-full">
                 <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
                 <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
                 <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
@@ -52,13 +52,12 @@ export default function WhyChooseUs({ data, className }: SectionProps<EventsAbou
             {/* Grid with Cross Border */}
             <div className="grid grid-cols-1 sm:grid-cols-2">
               {whyChooseUs.features.map((feature: any, idx: number) => (
-                <div 
-                  key={feature.title} 
-                  className={`p-6 sm:p-8 ${
-                    idx === 0 ? "border-b border-gray-100 sm:border-r" :
-                    idx === 1 ? "border-b border-gray-100" :
-                    idx === 2 ? "border-b sm:border-b-0 border-gray-100 sm:border-r" : ""
-                  }`}
+                <div
+                  key={feature.title}
+                  className={`p-6 sm:p-8 ${idx === 0 ? "border-b border-gray-100 sm:border-r" :
+                      idx === 1 ? "border-b border-gray-100" :
+                        idx === 2 ? "border-b sm:border-b-0 border-gray-100 sm:border-r" : ""
+                    }`}
                 >
                   <h3 className="text-[#6C2BD9] font-bold text-base md:text-lg mb-2">
                     {feature.title}

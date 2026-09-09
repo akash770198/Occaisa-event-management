@@ -32,15 +32,15 @@ export default function VisionValues({ data, className }: SectionProps<EventsVis
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-[#a45cf6] font-semibold text-sm md:text-base tracking-wider uppercase mb-3">
-              {values.badge}
-            </div>
-
-            {/* Divider */}
-            <div className="flex items-center justify-center gap-0 mb-6">
-              <div className="h-[2px] w-12 bg-gray-200"></div>
-              <span className="text-[#a45cf6] text-xl px-2 leading-none -mt-1">✦</span>
-              <div className="h-[2px] w-12 bg-gray-200"></div>
+            <div className="w-fit flex flex-col items-center mb-6">
+              <span className="text-[#a45cf6] font-semibold text-sm md:text-base tracking-wider uppercase mb-2">
+                {values.badge}
+              </span>
+              <div className="flex items-center gap-0 w-full">
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
+                <span className="text-[#a45cf6] text-xl px-2 leading-none -mt-1">✦</span>
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
+              </div>
             </div>
 
             <h3 className="text-xl md:text-2xl font-semibold text-[#0b132b] max-w-3xl leading-snug">

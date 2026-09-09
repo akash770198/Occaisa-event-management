@@ -12,12 +12,14 @@ export default function AwardsRecognitions({ data, className }: SectionProps<Eve
       <div className="container mx-auto px-6 md:px-12 lg:px-18">
         {/* Header Section */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <div className="flex flex-col gap-2 items-center">
-            <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider">{recognitions.badge}</span>
-            <div className="flex items-center gap-0">
-              <div className="h-[2px] w-12 bg-gray-200"></div>
+          <div className="w-fit flex flex-col items-center mb-6">
+            <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-2">
+              {recognitions.badge}
+            </span>
+            <div className="flex items-center gap-0 w-full">
+              <div className="h-[2px] flex-1 bg-gray-200"></div>
               <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
-              <div className="h-[2px] w-12 bg-gray-200"></div>
+              <div className="h-[2px] flex-1 bg-gray-200"></div>
             </div>
           </div>
         </div>

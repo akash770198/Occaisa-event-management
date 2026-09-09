@@ -21,12 +21,14 @@ export default function MissionPurpose({ data, className }: SectionProps<EventsM
             transition={{ duration: 0.8 }}
           >
             {/* Badge */}
-            <div className="flex flex-col gap-2 mb-6">
-              <span className="text-[#a45cf6] font-semibold text-sm md:text-base uppercase tracking-wider">{purpose.badge}</span>
-              <div className="flex items-center gap-0">
-                <div className="h-[2px] w-12 bg-gray-200"></div>
+            <div className="self-start w-fit flex flex-col items-center mb-6">
+              <span className="text-[#a45cf6] font-semibold text-sm md:text-base uppercase tracking-wider mb-2">
+                {purpose.badge}
+              </span>
+              <div className="flex items-center gap-0 w-full">
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
                 <span className="text-[#a45cf6] text-xl px-2 leading-none -mt-1">✦</span>
-                <div className="h-[2px] w-12 bg-gray-200"></div>
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
               </div>
             </div>
 
