@@ -128,8 +128,20 @@ export default function Hero({ data, className }: SectionProps<EventsHeroData> =
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-6 max-sm:flex-col max-sm:items-start max-sm:gap-4">
-            <Link href="/contact" className="bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] hover:opacity-90 text-white font-semibold py-4 px-8 rounded-sm transition-opacity duration-300 shadow-md max-sm:w-full inline-block text-center">
-              {hero.button1Text}
+            <Link
+              href="/contact"
+              className="group relative overflow-hidden bg-gradient-to-r from-[#00d0e6] to-[#7b2cbf] text-white font-semibold py-4 px-8 rounded-sm shadow-md hover:shadow-[0_12px_28px_-4px_rgba(189,0,255,0.45),0_6px_16px_-2px_rgba(123,44,191,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-500 max-sm:w-full inline-block text-center"
+            >
+              {/* Hover Gradient Overlay: Smoothly cross-fades into a rich purple-magenta gradient */}
+              <span className="absolute inset-0 bg-gradient-to-r from-[#7b2cbf] via-[#9d4edd] to-[#bd00ff] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              {/* Shimmer / Sheen Sweep */}
+              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+
+              {/* Button Text */}
+              <span className="relative z-10 inline-block transition-transform duration-300 group-hover:scale-[1.02]">
+                {hero.button1Text}
+              </span>
             </Link>
           </div>
         </motion.div>
