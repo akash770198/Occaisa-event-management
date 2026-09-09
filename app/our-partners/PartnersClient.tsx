@@ -23,11 +23,14 @@ export default function PartnersClient({ data, className }: SectionProps<EventsP
           
           {/* Header */}
           <div className="flex flex-col items-center mb-16 text-center">
-            <span className="text-[#6C2BD9] font-bold text-sm uppercase tracking-widest mb-3 flex items-center justify-center gap-4">
-              <div className="h-[2px] w-12 bg-[#6C2BD9]/30"></div>
+            <span className="text-[#6C2BD9] font-bold text-sm uppercase tracking-widest mb-3">
               {partnersPage.header.badge}
-              <div className="h-[2px] w-12 bg-[#6C2BD9]/30"></div>
             </span>
+            <div className="flex items-center justify-center gap-0 w-48 mb-6">
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+              <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+            </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-[#0b132b] tracking-tight mb-4">
               {partnersPage.header.titleStart} <br className="hidden md:block" />

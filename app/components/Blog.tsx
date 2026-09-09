@@ -21,13 +21,10 @@ export default function Blog({ data, className }: SectionProps<EventsBlogData> =
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-[#7209b7] font-bold text-sm md:text-base uppercase tracking-widest mb-3">
-            {blog.badge}
-          </span>
-          <div className="flex items-center justify-center gap-0 w-48 mb-6">
-            <div className="h-[2px] flex-1 bg-[#7209b7]/30"></div>
-            <div className="w-2.5 h-2.5 bg-[#7209b7] rotate-45 mx-3"></div>
-            <div className="h-[2px] flex-1 bg-[#7209b7]/30"></div>
+          <div className="flex items-center gap-4 text-[#7209b7] font-semibold text-sm md:text-base uppercase tracking-wider mb-6">
+            <div className="h-[1px] w-12 bg-[#7209b7]"></div>
+            <span>✦ {blog.badge} ✦</span>
+            <div className="h-[1px] w-12 bg-[#7209b7]"></div>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-[#0b132b] tracking-tight mb-4 leading-tight">
             {blog.titleStart}

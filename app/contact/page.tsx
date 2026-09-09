@@ -43,10 +43,10 @@ export default function ContactPage() {
             <span className="inline-block text-[#6C2BD9] text-sm font-bold uppercase tracking-wider mb-4">
               {heading.badge}
             </span>
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-[2px] w-12 bg-[#6C2BD9]"></div>
-              <div className="text-[#6C2BD9] text-sm">✦</div>
-              <div className="h-[2px] w-12 bg-[#6C2BD9]"></div>
+            <div className="flex items-center justify-center gap-0 w-48 mb-6">
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+              <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0b132b] mb-6 tracking-tight">
               {heading.titleStart} 

@@ -43,7 +43,7 @@ export default function BlogDetailClient({ slug, data, className }: { slug: stri
                 
                 <div className="flex flex-col gap-6 mt-8">
                   {blogPage.sidebar.popularPosts.map((p: any, idx: number) => (
-                    <div key={idx} className="flex gap-4 group cursor-pointer">
+                    <Link href={p.href} key={idx} className="flex gap-4 group cursor-pointer">
                       <div className="w-20 h-20 rounded-lg overflow-hidden relative flex-shrink-0">
                         <Image src={p.image} alt={p.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                       </div>
@@ -53,7 +53,7 @@ export default function BlogDetailClient({ slug, data, className }: { slug: stri
                         </h4>
                         <span className="text-xs text-gray-500 font-medium">{p.date}</span>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </motion.div>

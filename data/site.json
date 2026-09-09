@@ -1503,27 +1503,54 @@
                 "date": "13 Aug 2026",
                 "image": "/Event/leadership_summit.jpg",
                 "href": "/blog/event-trends-2026"
+              },
+              {
+                "title": "The Ultimate Guide to Selecting an Event Venue",
+                "excerpt": "Finding the perfect venue is crucial for event success. Here is everything you need to consider before signing a contract.",
+                "author": "Vikram Sinha",
+                "authorImage": "/Testimonials/vikram_sinha.svg",
+                "date": "05 Aug 2026",
+                "image": "/Event/new_year_celebration.jpg",
+                "href": "/blog/event-venue-guide"
+              },
+              {
+                "title": "Eco-Friendly Events: Sustainable Planning Tips",
+                "excerpt": "Sustainability is no longer a trend, it's a necessity. Discover how to reduce waste and plan an eco-conscious event.",
+                "author": "Sneha Kapoor",
+                "authorImage": "/Testimonials/sneha_kapoor.svg",
+                "date": "29 Jul 2026",
+                "image": "/Event/corporate_awards.jpg",
+                "href": "/blog/sustainable-events"
+              },
+              {
+                "title": "Maximizing Event Engagement with Technology",
+                "excerpt": "From interactive apps to live polling, explore the best tools and tech to keep your attendees engaged and involved.",
+                "author": "Amit Verma",
+                "authorImage": "/Testimonials/amit_verma.svg",
+                "date": "15 Jul 2026",
+                "image": "/Event/hero_event_bg.jpg",
+                "href": "/blog/event-engagement-tech"
               }
             ],
             "sidebar": {
               "popularPosts": [
                 {
-                  "title": "5 Creative Theme Ideas for Your Next Event",
-                  "date": "20 Jul 2026",
-                  "image": "/Event/corporate_awards.jpg",
-                  "href": "/blog/theme-ideas"
+                  "title": "How to Plan a Successful Corporate Gala Event",
+                  "date": "22 Aug 2026",
+                  "image": "/Event/annual_gala_night.jpg",
+                  "href": "/blog/corporate-gala"
                 },
                 {
-                  "title": "How to Create an Amazing Guest Experience",
-                  "date": "17 Jul 2026",
-                  "image": "/Event/new_year_celebration.jpg",
-                  "href": "/blog/guest-experience"
+                  "title": "Destination Wedding Checklist: Everything You Need",
+                  "date": "18 Aug 2026",
+                  "image": "/Event/sunset_beach_wedding.jpg",
+                  "href": "/blog/destination-wedding"
                 },
                 {
-                  "title": "Event Lighting Tips to Set the Perfect Mood",
-                  "date": "14 Jul 2026",
-                  "image": "/Event/hero_event_bg.jpg",
-                  "href": "/blog/event-lighting"
+                  "title": "Top Event Trends to Watch in 2026",
+                  "date": "13 Aug 2026",
+                  "image": "/Event/leadership_summit.jpg",
+                  "href": "/blog/event-trends-2026"
                 }
               ],
               "newsletter": {

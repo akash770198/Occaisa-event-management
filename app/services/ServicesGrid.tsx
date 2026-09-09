@@ -21,7 +21,7 @@ export default function ServicesGrid({ data, className }: SectionProps<EventsSer
           </span>
           <div className="flex items-center justify-center gap-0 w-48 mb-6">
             <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
-            <div className="w-2.5 h-2.5 bg-[#6C2BD9] rotate-45 mx-3"></div>
+            <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
             <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b132b] tracking-tight">

@@ -3,11 +3,22 @@
 import PageBanner from "@/app/components/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { site, SectionProps, EventsBlogPageData } from "@/data";
 import { motion } from "framer-motion";
 
 export default function BlogClient({ data, className }: SectionProps<EventsBlogPageData> = {}) {
   const blogPage = data || site.blogPage;
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 2;
+  const totalPages = Math.ceil(blogPage.mainPosts.length / postsPerPage);
+
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const displayedPosts = blogPage.mainPosts.slice(startIndex, startIndex + postsPerPage);
+  
+  const popularPostsToDisplay = blogPage.mainPosts
+    .filter((post: any) => !displayedPosts.some((dp: any) => dp.title === post.title))
+    .slice(0, 3);
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fc]">
@@ -24,11 +35,14 @@ export default function BlogClient({ data, className }: SectionProps<EventsBlogP
           
           {/* Header */}
           <div className="flex flex-col items-center mb-16 text-center">
-            <span className="text-[#6C2BD9] font-bold text-sm uppercase tracking-widest mb-3 flex items-center justify-center gap-4">
-              <div className="h-[2px] w-12 bg-[#6C2BD9]/30"></div>
+            <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-widest mb-3">
               {blogPage.header.badge}
-              <div className="h-[2px] w-12 bg-[#6C2BD9]/30"></div>
             </span>
+            <div className="flex items-center justify-center gap-0 w-48 mb-6">
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+              <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
+              <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+            </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-[#0b132b] tracking-tight mb-4">
               {blogPage.header.titleStart} <span className="text-[#bd00ff]">{blogPage.header.titleHighlight}</span>
@@ -41,7 +55,7 @@ export default function BlogClient({ data, className }: SectionProps<EventsBlogP
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             {/* Left Column - Main Posts */}
             <div className="lg:col-span-8 flex flex-col gap-10">
-              {blogPage.mainPosts.map((post: any, idx: number) => (
+              {displayedPosts.map((post: any, idx: number) => (
                 <motion.div 
                   key={idx}
                   initial={{ opacity: 0, y: 30 }}
@@ -87,14 +101,39 @@ export default function BlogClient({ data, className }: SectionProps<EventsBlogP
               ))}
 
               {/* Pagination */}
-              <div className="flex justify-center items-center gap-2 mt-4">
-                <button className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm">&lt;</button>
-                <button className="w-10 h-10 rounded-lg bg-[#bd00ff] text-white font-bold shadow-md shadow-purple-500/30 flex items-center justify-center">1</button>
-                <button className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-700 font-medium hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm">2</button>
-                <button className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-700 font-medium hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm">3</button>
-                <button className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-700 font-medium hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm">4</button>
-                <button className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm">&gt;</button>
-              </div>
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center gap-2 mt-4">
+                  <button 
+                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                    disabled={currentPage === 1}
+                    className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    &lt;
+                  </button>
+                  
+                  {Array.from({ length: totalPages }).map((_, i) => (
+                    <button 
+                      key={i}
+                      onClick={() => setCurrentPage(i + 1)}
+                      className={`w-10 h-10 rounded-lg flex items-center justify-center font-medium transition-colors shadow-sm ${
+                        currentPage === i + 1 
+                          ? "bg-[#bd00ff] text-white font-bold shadow-md shadow-purple-500/30" 
+                          : "border border-gray-200 text-gray-700 hover:border-[#bd00ff] hover:text-[#bd00ff] bg-white"
+                      }`}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                  
+                  <button 
+                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                    disabled={currentPage === totalPages}
+                    className="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#bd00ff] hover:text-[#bd00ff] transition-colors bg-white shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    &gt;
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Right Column - Sidebar */}
@@ -114,8 +153,8 @@ export default function BlogClient({ data, className }: SectionProps<EventsBlogP
                 </h3>
                 
                 <div className="flex flex-col gap-6 mt-8">
-                  {blogPage.sidebar.popularPosts.map((post: any, idx: number) => (
-                    <div key={idx} className="flex gap-4 group cursor-pointer">
+                  {popularPostsToDisplay.map((post: any, idx: number) => (
+                    <Link href={post.href} key={idx} className="flex gap-4 group cursor-pointer">
                       <div className="w-20 h-20 rounded-lg overflow-hidden relative flex-shrink-0">
                         <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                       </div>
@@ -125,7 +164,7 @@ export default function BlogClient({ data, className }: SectionProps<EventsBlogP
                         </h4>
                         <span className="text-xs text-gray-500 font-medium">{post.date}</span>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </motion.div>

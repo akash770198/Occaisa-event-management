@@ -28,10 +28,10 @@ export default function WhyChooseUs({ data, className }: SectionProps<EventsAbou
               <div className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-3">
                 {whyChooseUs.badge}
               </div>
-              <div className="flex items-center">
-                <div className="h-[2px] w-12 bg-[#6C2BD9]"></div>
-                <div className="mx-2 text-[#6C2BD9] text-sm">✦</div>
-                <div className="h-[2px] w-12 bg-[#6C2BD9]"></div>
+              <div className="flex items-center gap-0 w-48">
+                <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+                <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
+                <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
               </div>
             </div>
 
