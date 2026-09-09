@@ -333,7 +333,7 @@
             "titleHighlight": "Passion!",
             "paragraph1": "As an event management company, we are dedicated to executing your vision flawlessly. From corporate gatherings to grand celebrations, we handle every detail with creativity and care.",
             "paragraph2": "With years of experience in managing diverse events, we ensure a seamless experience for you and your guests. Allow us to take the stress out of event planning so you can enjoy every moment.",
-            "buttonText": "Discover More >",
+            "buttonText": "Discover More",
             "buttonLink": "/about-us",
             "showButton": true
           }
@@ -2445,8 +2445,7 @@
             "sidebar": {
               "joinTeam": {
                 "title": "Join Our Team",
-                "description": "Be part of a team that turns ideas into unforgettable experiences.",
-                "buttonText": "View Open Positions"
+                "description": "Be part of a team that turns ideas into unforgettable experiences."
               },
               "benefits": {
                 "title": "Why Join Occasia?",
@@ -2477,6 +2476,7 @@
                 "title": "Our Culture",
                 "description": "Passion, creativity and teamwork are at the heart of everything we do.",
                 "linkText": "Life at Occasia",
+                "linkUrl": "/about-us",
                 "image": "/Event/sunset_beach_wedding.jpg"
               }
             }
@@ -2673,7 +2673,8 @@
                   "Competitive salary & benefits",
                   "Make memories that last a lifetime"
                 ],
-                "linkText": "Life at Occasia"
+                "linkText": "Life at Occasia",
+                "linkUrl": "/about-us"
               }
             }
           }
@@ -2774,7 +2775,8 @@
                   "location": "The Grand Orion, Mumbai",
                   "description": "An enchanting evening of celebration, entertainment and memorable experiences.",
                   "image": "/Event/annual_gala_night.jpg",
-                  "linkUrl": "/events/annual-gala-night"
+                  "linkUrl": "/events/annual-gala-night",
+                  "buttonText": "Book Now"
                 },
                 {
                   "badge": "WEDDING",
@@ -2784,7 +2786,8 @@
                   "location": "Taj Lands End, Mumbai",
                   "description": "A dreamy beachside wedding celebration filled with love and joy.",
                   "image": "/Event/sunset_beach_wedding.jpg",
-                  "linkUrl": "/events/sunset-beach-wedding"
+                  "linkUrl": "/events/sunset-beach-wedding",
+                  "buttonText": "Book Now"
                 },
                 {
                   "badge": "CONFERENCE",
@@ -2794,7 +2797,8 @@
                   "location": "Jio World Convention Centre",
                   "description": "Inspiring talks, insightful sessions and powerful connections with industry leaders.",
                   "image": "/Event/leadership_summit.jpg",
-                  "linkUrl": "/events/leadership-summit"
+                  "linkUrl": "/events/leadership-summit",
+                  "buttonText": "Book Now"
                 },
                 {
                   "badge": "CELEBRATION",
@@ -2804,7 +2808,8 @@
                   "location": "The St. Regis, Mumbai",
                   "description": "Ring in the new year with music, fun, and unforgettable memories.",
                   "image": "/Event/new_year_celebration.jpg",
-                  "linkUrl": "/events/new-year-celebration"
+                  "linkUrl": "/events/new-year-celebration",
+                  "buttonText": "Book Now"
                 },
                 {
                   "badge": "AWARDS",
@@ -2814,7 +2819,8 @@
                   "location": "Four Seasons Hotel, Mumbai",
                   "description": "Honoring excellence and celebrating achievements that inspire success.",
                   "image": "/Event/corporate_awards.jpg",
-                  "linkUrl": "/events/corporate-awards"
+                  "linkUrl": "/events/corporate-awards",
+                  "buttonText": "Book Now"
                 }
               ]
             },
@@ -2827,7 +2833,8 @@
                 "location": "The Grand Orion, Mumbai",
                 "description": "An enchanting evening of celebration, entertainment and memorable experiences.",
                 "image": "/Event/annual_gala_night.jpg",
-                "linkUrl": "/events/annual-gala-night"
+                "linkUrl": "/events/annual-gala-night",
+                "buttonText": "Book Now"
               },
               "categories": {
                 "title": "Categories",
@@ -3986,7 +3993,7 @@
                   }
                 }
               ],
-              "buttonText": "View All Team Members →",
+              "buttonText": "View All Team Members",
               "buttonLink": "/our-team"
             }
           }

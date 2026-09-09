@@ -35,7 +35,7 @@ export default function TeamDetailPage({ params }: { params: Promise<{ slug: str
       />
 
       <div className="bg-white flex-1 w-full">
-        <div className="container mx-auto px-6 md:px-12 lg:px-18 py-20 lg:py-24">
+        <div className="container mx-auto px-6 md:px-12 lg:px-18 pt-20 lg:pt-24 pb-14 lg:pb-16">
           {/* Profile Section */}
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20 items-center">
             <motion.div 
@@ -161,13 +161,13 @@ export default function TeamDetailPage({ params }: { params: Promise<{ slug: str
           </div>
 
           {/* Related Team Section */}
-          <div className="flex flex-col items-center mb-16 text-center">
-            <div className="flex flex-col gap-2 items-center mb-10">
-              <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider">{relatedTeam.badge}</span>
-              <div className="flex items-center gap-0">
-                <div className="h-[2px] w-12 bg-gray-200"></div>
+          <div className="flex flex-col items-center text-center">
+            <div className="w-fit flex flex-col items-center mb-10">
+              <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-2">{relatedTeam.badge}</span>
+              <div className="flex items-center gap-0 w-full">
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
                 <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
-                <div className="h-[2px] w-12 bg-gray-200"></div>
+                <div className="h-[2px] flex-1 bg-gray-200"></div>
               </div>
             </div>
             

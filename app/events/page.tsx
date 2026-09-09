@@ -181,9 +181,12 @@ export default function EventsPage() {
                       <Link href={event.linkUrl} className="text-[#6C2BD9] text-sm font-bold flex items-center gap-1 hover:text-[#5b22b8] transition-colors">
                         View Details <ArrowRight className="w-4 h-4" />
                       </Link>
-                      <button className="border border-[#bd00ff] text-[#bd00ff] hover:bg-[#bd00ff] hover:text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors">
-                        Book Now
-                      </button>
+                      <Link 
+                        href={event.linkUrl} 
+                        className="border border-[#bd00ff] text-[#bd00ff] hover:bg-[#bd00ff] hover:text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors inline-flex items-center justify-center"
+                      >
+                        {event.buttonText || event.bookButtonText || event.bookNowText || "Book Now"}
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -262,9 +265,12 @@ export default function EventsPage() {
                   {sidebar.featured.description}
                 </p>
                 
-                <button className="w-full bg-[#6C2BD9] hover:bg-[#5b22b8] text-white py-3 rounded-xl text-sm font-bold transition-all shadow-md shadow-[#6C2BD9]/20">
-                  Book Now
-                </button>
+                <Link 
+                  href={sidebar.featured.linkUrl} 
+                  className="w-full bg-[#6C2BD9] hover:bg-[#5b22b8] text-white py-3 rounded-xl text-sm font-bold transition-all shadow-md shadow-[#6C2BD9]/20 inline-flex items-center justify-center"
+                >
+                  {(sidebar.featured as any).buttonText || (sidebar.featured as any).bookButtonText || "Book Now"}
+                </Link>
               </div>
 
               {/* Categories */}

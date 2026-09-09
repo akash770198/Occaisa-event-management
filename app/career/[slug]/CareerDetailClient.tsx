@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 import { 
   CalendarDays, User, Users, Clock, MapPin, Briefcase, Hash, 
   IndianRupee, FileText, CheckCircle2, Award, Gift, TrendingUp, 
-  Shield, BookOpen, Plane, Heart, Send, UploadCloud, Lock, 
-  Bookmark, Share2
+  Shield, BookOpen, Plane, Heart, Send, UploadCloud, Lock
 } from "lucide-react";
 
 export default function CareerDetailClient({ slug, data, className }: { slug: string } & SectionProps<any>) {
@@ -113,14 +112,6 @@ export default function CareerDetailClient({ slug, data, className }: { slug: st
                       <button className="bg-[#6C2BD9] hover:bg-[#bd00ff] text-white font-bold py-3 px-8 rounded-lg shadow-md hover:shadow-lg hover:shadow-purple-500/30 transition-all flex items-center gap-2">
                         <Send className="w-4 h-4" />
                         Apply Now
-                      </button>
-                      <button className="bg-white border-2 border-[#e6ccff] text-[#6C2BD9] hover:bg-[#fcf8ff] font-bold py-2.5 px-6 rounded-lg transition-colors flex items-center gap-2">
-                        <Bookmark className="w-4 h-4" />
-                        Save Job
-                      </button>
-                      <button className="text-gray-500 hover:text-[#6C2BD9] font-bold py-3 px-4 rounded-lg transition-colors flex items-center gap-2 ml-auto md:ml-0">
-                        <Share2 className="w-4 h-4" />
-                        Share
                       </button>
                     </div>
                   </div>
@@ -423,7 +414,7 @@ export default function CareerDetailClient({ slug, data, className }: { slug: st
                     </li>
                   ))}
                 </ul>
-                <Link href="#" className="inline-flex items-center gap-2 text-[#6C2BD9] font-bold hover:text-[#bd00ff] transition-colors text-sm">
+                <Link href={careerDetailPage.sidebar.whyJoin.linkUrl || "/about-us"} className="inline-flex items-center gap-2 text-[#6C2BD9] font-bold hover:text-[#bd00ff] transition-colors text-sm">
                   {careerDetailPage.sidebar.whyJoin.linkText}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

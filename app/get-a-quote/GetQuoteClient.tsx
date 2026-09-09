@@ -162,7 +162,7 @@ export default function GetQuoteClient({ data, className }: SectionProps<EventsG
                     {getQuotePage.form.agreementText}
                     <Link href="/privacy-policy" className="text-[#6C2BD9] font-bold hover:underline">{getQuotePage.form.privacyLink}</Link>
                     {" "}and{" "}
-                    <Link href="#" className="text-[#6C2BD9] font-bold hover:underline">{getQuotePage.form.termsLink}</Link>
+                    <Link href="/privacy-policy" className="text-[#6C2BD9] font-bold hover:underline">{getQuotePage.form.termsLink}</Link>
                   </span>
                 </motion.div>
 

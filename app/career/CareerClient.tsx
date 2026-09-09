@@ -212,14 +212,9 @@ export default function CareerClient({ data, className }: SectionProps<EventsCar
                 <h3 className="text-2xl font-bold mb-3 relative z-10">
                   {careerPage.sidebar.joinTeam.title}
                 </h3>
-                <p className="text-gray-300 text-sm mb-8 leading-relaxed relative z-10">
+                <p className="text-gray-300 text-sm leading-relaxed relative z-10">
                   {careerPage.sidebar.joinTeam.description}
                 </p>
-                
-                <button className="relative z-10 w-full bg-white text-[#120a30] font-bold py-3 px-6 rounded-lg hover:shadow-lg hover:bg-gray-100 transition-all text-sm flex items-center justify-center gap-2">
-                  {careerPage.sidebar.joinTeam.buttonText}
-                  <ArrowRight className="w-4 h-4" />
-                </button>
               </motion.div>
 
               {/* Benefits Block */}
@@ -267,7 +262,7 @@ export default function CareerClient({ data, className }: SectionProps<EventsCar
                   {careerPage.sidebar.culture.description}
                 </p>
                 
-                <Link href="#" className="inline-flex items-center gap-2 text-[#6C2BD9] font-bold hover:text-[#bd00ff] transition-colors text-sm">
+                <Link href={careerPage.sidebar.culture.linkUrl || "/about-us"} className="inline-flex items-center gap-2 text-[#6C2BD9] font-bold hover:text-[#bd00ff] transition-colors text-sm">
                   {careerPage.sidebar.culture.linkText}
                   <ArrowRight className="w-4 h-4" />
                 </Link>

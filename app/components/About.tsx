@@ -74,10 +74,16 @@ export default function About({ data, className, showButton }: AboutProps = {}) 
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {/* Badge */}
-            <div className="flex items-center gap-2 mb-4 text-[#7b2cbf] font-semibold text-sm md:text-base uppercase tracking-wider">
-              <span className="text-2xl font-light leading-none -mt-1">[</span>
-              {about.badge}
+            {/* Badge & Separator */}
+            <div className="self-start w-fit flex flex-col items-center mb-6">
+              <span className="text-[#6C2BD9] font-bold text-sm md:text-base uppercase tracking-wider mb-2">
+                {about.badge}
+              </span>
+              <div className="flex items-center gap-0 w-full">
+                <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+                <span className="text-[#6C2BD9] text-xl px-2 leading-none -mt-1">✦</span>
+                <div className="h-[2px] flex-1 bg-[#6C2BD9]/30"></div>
+              </div>
             </div>
 
             {/* Title */}
@@ -87,13 +93,6 @@ export default function About({ data, className, showButton }: AboutProps = {}) 
                 {about.titleHighlight}
               </span>
             </h2>
-
-            {/* Divider */}
-            <div className="flex items-center mb-8">
-              <div className="h-[2px] w-12 bg-[#00d0e6]"></div>
-              <div className="mx-3 text-[#1c3e98] text-lg">✦</div>
-              <div className="h-[2px] w-12 bg-[#7b2cbf]"></div>
-            </div>
 
             {/* Paragraph 1 */}
             <div className="relative pl-6 mb-8">
