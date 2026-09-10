@@ -84,18 +84,6 @@ export default function Hero({ data, className }: SectionProps<EventsHeroData> =
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
-          {/* Pagination Dots */}
-          <div className="flex flex-col gap-3">
-            {hero.images?.map((_, idx) => (
-              <div 
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`w-2 h-2 rounded-full cursor-pointer transition-all duration-300 ${
-                  currentIndex === idx ? "bg-white scale-125 shadow-[0_0_10px_white]" : "bg-white/40 hover:bg-white/70"
-                }`}
-              ></div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Content Box */}
